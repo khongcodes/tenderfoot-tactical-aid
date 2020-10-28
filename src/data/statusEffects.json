@@ -1,0 +1,16 @@
+{
+  "numb": {
+    "effects": [
+      {
+        "tag": "plusMaxHealth",
+        "number": 10,
+        "target": "target"
+      },
+      {
+        "tag": "reduceIncomingUnnerve",
+        "number": 2,
+        "target": "target"
+      }
+    ]
+  }
+}

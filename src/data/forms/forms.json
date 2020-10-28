@@ -1,0 +1,363 @@
+{
+  "goblin": {
+    "formalName": "Goblin",
+    "availableFromStart": true,
+    "requirements": {},
+    "baseHP": 75,
+    "description": "Unskilled mutt. Extremely common and just as versatile. Better with tools than some of the more elaborate breeds. Caring to friends and nasty to foes.",
+    "skills": [
+      [
+        [
+          {
+            "name": "Attack (bow)",
+            "skillLevel": 1,
+            "range": "3-5",
+            "areaOfEffect": "single",
+            "effects": {
+              "damage": 30
+            },
+            "tags": ["damage"]
+          },
+          {
+            "name": "Attack (sword)",
+            "skillLevel": 1,
+            "range": 1,
+            "areaOfEffect": "single",
+            "effects": {
+              "damage": 40
+            },
+            "tags": ["damage"]
+          },
+          {
+            "name": "Attack (slingshot)",
+            "skillLevel": 1,
+            "range": 3,
+            "areaOfEffect": "single",
+            "effects": {
+              "damage": 30
+            },
+            "tags": ["damage"]
+          }
+        ]
+      ],
+      [
+        [{
+          "name": "First aid",
+          "skillLevel": 1,
+          "range": 1,
+          "areaOfEffect": "single",
+          "effects": {
+            "heal": 55
+          },
+          "tags": ["heal"]
+        }],
+        [{
+          "name": "First aid 2",
+          "skillLevel": 2,
+          "range": 1,
+          "areaOfEffect": "single",
+          "effects": {
+            "heal": 70
+          },
+          "tags": ["heal"]
+        }]
+      ],
+      [
+        [{
+          "name": "Grenade",
+          "skillLevel": 1,
+          "range": 2,
+          "areaOfEffect": "cross",
+          "effects": {
+            "damage": 25
+          },
+          "terrainEffects": {
+            "breakDestructibles": true,
+            "earthDown": 1
+          },
+          "tags": ["damage", "breakDestructibles", "earthDown"]
+        }],
+        [{
+          "name": "Grenade 2",
+          "skillLevel": 2,
+          "range": 2,
+          "areaOfEffect": "cross",
+          "effects": {
+            "damage": 30
+          },
+          "terrainEffects": {
+            "breakDestructibles": true,
+            "earthDown": 2
+          },
+          "tags": ["damage", "breakDestructibles", "earthDown"]
+        }],
+        [{
+          "name": "Grenade 3",
+          "skillLevel": 3,
+          "range": 2,
+          "areaOfEffect": "square",
+          "effects": {
+            "damage": 30
+          },
+          "terrainEffects": {
+            "breakDestructibles": true,
+            "earthDown": 2
+          },
+          "tags": ["damage", "breakDestructibles", "earthDown"]
+        }]
+      ],
+      [
+        [{
+          "name": "Song",
+          "skillLevel": 1,
+          "range": 0,
+          "areaOfEffect": "square",
+          "effects": {
+            "heal": 25,
+            "healSelf": 25
+          },
+          "tags": ["heal", "healSelf"]
+        }],
+        [{
+          "name": "Canticle",
+          "skillLevel": 2,
+          "range": 0,
+          "areaOfEffect": "square",
+          "effects": {
+            "heal": 40,
+            "healSelf": 40
+          },
+          "terrainEffects": {
+            "growth": 2
+          },
+          "tags": ["heal", "healSelf", "growth"]
+        }],
+        [{
+          "name": "Canticle 2",
+          "skillLevel": 3,
+          "range": 0,
+          "areaOfEffect": "square",
+          "effects": {
+            "heal": 55,
+            "healSelf": 55
+          },
+          "terrainEffects": {
+            "growth": 5
+          },
+          "tags": ["heal", "healSelf", "growth"]
+        }]
+      ],
+      [
+        [{
+          "name": "Strangle",
+          "skillLevel": 1,
+          "range": 1,
+          "areaOfEffect": "single",
+          "effects": {
+            "damage": 35,
+            "doubleDamageFromBehind": true
+          },
+          "tags": ["damage", "doubleDamageFromBehind"]
+        }],
+        [{
+          "name": "Garrote",
+          "skillLevel": 2,
+          "range": 1,
+          "areaOfEffect": "single",
+          "effects": {
+            "damage": 45,
+            "doubleDamageFromBehind": true
+          },
+          "terrainEffects": {
+            "water": 2
+          },
+          "tags": ["damage", "doubleDamageFromBehind", "water"]
+        }],
+        [{
+          "name": "Garrote 2",
+          "skillLevel": 3,
+          "range": 1,
+          "areaOfEffect": "single",
+          "effects": {
+            "damage": 55,
+            "doubleDamageFromBehind": true
+          },
+          "terrainEffects": {
+            "water": 2
+          },
+          "tags": ["damage", "doubleDamageFromBehind", "water"]
+        }]
+      ],
+      [
+        [{
+          "name": "Anesthetize",
+          "skillLevel": 1,
+          "range": 5,
+          "areaOfEffect": "single",
+          "terrainEffects": {
+            "growth": 10
+          },
+          "statusEffects": {
+            "numb": 720
+          },
+          "tags": ["growth", "numb", "plusMaxHealth", "reduceIncomingUnnerve"]
+        }]
+      ],
+      [
+        [{
+          "name": "Opportunist",
+          "skillLevel": 1,
+          "passive": true,
+          "range": 1,
+          "areaOfEffect": "cross",
+          "description": "When an enemy moves out of an adjacent tile, this unit takes a free attack.",
+          "tags": ["passive"]
+        }]
+      ]
+    ]
+  },
+  "knight": {
+    "formalName": "Knight",
+    "availableFromStart": true,
+    "requirements": {
+      "goblin": 4
+    },
+    "baseHP": 125,
+    "description": "A common sturdy breed. Good for blocking narrow passages. Natural leaders whose words inspire and demoralize.",
+    "skills": [
+      [
+        [{
+          "name": "Shield Bash",
+          "skillLevel": 1,
+          "range": 1,
+          "areaOfEffect": "single",
+          "effects": {
+            "damage": 45,
+            "knockback": 1
+          },
+          "terrainEffects": {
+            "breakDestructibles": true
+          },
+          "tags": ["damage", "knockback", "breakDestructibles"]
+        }],
+        [{
+          "name": "Shield Bash 2",
+          "skillLevel": 2,
+          "range": 1,
+          "areaOfEffect": "single",
+          "effects": {
+            "damage": 50,
+            "knockback": 2
+          },
+          "terrainEffects": {
+            "breakDestructibles": true
+          },
+          "tags": ["damage", "knockback", "breakDestructibles"]
+        }]
+      ],
+      [
+        [{}],
+        [{}]
+      ],
+      [
+        [{}], 
+        [{}], 
+        [{}]
+      ],
+      [
+        [{}], 
+        [{}]
+      ],
+      [
+        [{}], 
+        [{}]
+      ],
+      [
+        [{}]
+      ]
+    ]
+  },
+  "polearm": {
+    "formalName": "Polearm",
+    "availableFromStart": true,
+    "requirements": {
+      "knight": 5
+    },
+    "baseHP": 140,
+    "description": "Deliberate and deeply self-confident. Their skill and disposition command respect, even from the most cultivated breeds.",
+    "skills": []
+  },
+  "spellsword": {
+    "formalName": "Spellsword",
+    "availableFromStart": true,
+    "requirements": {
+      "knight": 4,
+      "wizard": 3
+    },
+    "baseHP": 100,
+    "description": "Hot-blooded and decisive. A natural fighter with a broad affinity for the elements. This breed has a tendency to bite off more than they can chew.",
+    "skills": []
+  },
+  "battlemage": {
+    "formalName": "Battlemage",
+    "availableFromStart": true,
+    "requirements": {
+      "knight": 3,
+      "woods witch": 3
+    },
+    "baseHP": 120,
+    "description": "Defensive and versatile melee mage with high health, healing spells, and terrain manipulation capabilities.",
+    "skills": []
+  },
+  "woodsWitch": {
+    "formalName": "Woods Witch",
+    "availableFromStart": true,
+    "requirements": {
+      "goblin": 5
+    },
+    "baseHP": 70,
+    "description": "Trustworthy, level-headed, with a truer understanding of life than most goblins. A ranged healer with  a variety of other capabilities.",
+    "skills": []
+  },
+  "wizard": {
+    "formalName": "Wizard",
+    "availableFromStart": true,
+    "requirements": {
+      "archer": 4
+    },
+    "baseHP": 65,
+    "description": "A well rounded mage witha mild affinity for the flame. Tends toward snark.",
+    "skills": []
+  },
+  "1": {},
+  "2": {},
+  "salamander": {
+    "formalName": "Salamander",
+    "availableFromStart": false,
+    "requirements": {
+      "polearm": 3,
+      "battlemage": 5
+    },
+    "baseHP": 95,
+    "description": "Semi-aquatic. Thrives in marshes. Slimy and disease-ridden, but with a keen affinity for the healing arts.",
+    "unlockSite": "west",
+    "skills": []
+  },
+  "shaman": {
+    "formalName": "Shaman",
+    "availableFromStart": false,
+    "requirements": {
+      "battlemage": 6
+    },
+    "baseHP": 120,
+    "description": "A disciplined healer who can control earth and plant. Can take a hit and deal one out, too.",
+    "unlockSite": "north-of-west",
+    "skills": []
+  },
+  "5": {},
+  "6": {},
+  "7": {},
+  "8": {},
+  "9": {},
+  "0": {}
+}
