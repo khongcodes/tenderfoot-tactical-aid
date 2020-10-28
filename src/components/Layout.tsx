@@ -3,36 +3,38 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////                                                                        IMPORTS
-// 1. React
-// 2. Layout elements
-// 3. Views
+// 1. React & packages
+// 2. Styles
 
-import React from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import React from "react";
 
-import Layout from "./components/Layout";
-
-import Home from "./views/Home";
-
+import "../assets/style/layout.sass"
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////                                                                          SETUP
+
+type LayoutProps = {
+  children: React.ReactNode[] | React.ReactNode;
+};
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////                                                             COMPONENTS & LOGIC
 
-function App() {
-  return (
-    <BrowserRouter>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="*" element={<Navigate to="/" />} />
-        </Routes>
-      </Layout>
-    </BrowserRouter>
-  );
-}
+const Header: React.FC = () => (
+  <div>
+    I'm header
+  </div>
+);
 
-export default App;
+const Layout: React.FC<LayoutProps> = ({ children }) => {
+  return (
+    <div id="layoutRoot">
+      <Header />
+
+      {children}
+    </div>
+  );
+};
+
+export default Layout;
