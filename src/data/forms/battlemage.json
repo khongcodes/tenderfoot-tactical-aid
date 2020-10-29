@@ -1,0 +1,250 @@
+{
+  "formalName": "Battlemage",
+  "availableFromStart": true,
+  "requirements": {
+    "knight": 3,
+    "woods witch": 3
+  },
+  "baseHP": 120,
+  "description": "Defensive and versatile melee mage with high health, healing spells, and terrain manipulation capabilities.",
+  "affinity": ["water", "earth", "life"],
+  "skills": [
+    [
+      [{
+        "name": "Surge",
+        "skillLevel": 1,
+        "range": "1-1",
+        "areaOfEffect": "cone 1",
+        "effects": {
+          "damage": 35,
+          "knockback": 1
+        },
+        "terrainEffects": {
+          "water": 10,
+          "breakDestructibles": true
+        },
+        "tags": ["damage", "knockback", "water", "breakDestructibles"]
+      }], 
+      [{
+        "name": "Surge 2",
+        "skillLevel": 2,
+        "range": "1-1",
+        "areaOfEffect": "cone 1",
+        "effects": {
+          "damage": 50,
+          "knockback": 1
+        },
+        "terrainEffects": {
+          "water": 15,
+          "breakDestructibles": true
+        },
+        "tags": ["damage", "knockback", "water", "breakDestructibles"]
+      }], 
+      [{
+        "name": "Surge 3",
+        "skillLevel": 3,
+        "range": "1-1",
+        "areaOfEffect": "cone 2",
+        "effects": {
+          "damage": 40,
+          "knockback": 1
+        },
+        "terrainEffects": {
+          "water": 20,
+          "breakDestructibles": true
+        },
+        "tags": ["damage", "knockback", "water", "breakDestructibles"]
+      }]
+    ],
+    [
+      [{
+        "name": "Thirst",
+        "skillLevel": 1,
+        "range": "1-2",
+        "areaOfEffect": "line",
+        "effects": {
+          "damage": 25,
+          "healSelf": true
+        },
+        "terrainEffects": {
+          "water": 3
+        },
+        "description": "Heals caster for damage done.",
+        "tags": ["damage", "healSelf", "water"]
+      }], 
+      [{
+        "name": "Thirst 2",
+        "skillLevel": 2,
+        "range": "1-1",
+        "areaOfEffect": "cone 1",
+        "effects": {
+          "damage": 25,
+          "healSelf": true
+        },
+        "terrainEffects": {
+          "water": 6
+        },
+        "description": "Heals caster for damage done.",
+        "tags": ["damage", "healSelf", "water"]
+      }], 
+      [{
+        "name": "Thirst 3",
+        "skillLevel": 3,
+        "range": "1-1",
+        "areaOfEffect": "C",
+        "effects": {
+          "damage": 25,
+          "healSelf": true
+        },
+        "terrainEffects": {
+          "water": 9
+        },
+        "description": "Heals caster for damage done.",
+        "tags": ["damage", "healSelf", "water"]
+      }]
+    ],
+    [
+      [{
+        "name": "Tend",
+        "skillLevel": 1,
+        "range": 1,
+        "areaOfEffect": "single",
+        "effects": {
+          "heal": 40
+        },
+        "terrainEffects": {
+          "growth": 9
+        },
+        "tags": ["heal", "growth"]
+      }], 
+      [{
+        "name": "Tend 2",
+        "skillLevel": 2,
+        "range": 1,
+        "areaOfEffect": "single",
+        "effects": {
+          "heal": 60
+        },
+        "terrainEffects": {
+          "growth": 9,
+          "createBrush": true
+        },
+        "tags": ["heal", "growth", "createBrush"]
+      }], 
+      [{
+        "name": "Tend 3",
+        "skillLevel": 3,
+        "range": 1,
+        "areaOfEffect": "single",
+        "effects": {
+          "heal": 80
+        },
+        "terrainEffects": {
+          "growth": 9,
+          "createBrush": true
+        },
+        "tags": ["heal", "growth", "createBrush"]
+      }]
+    ],
+    [
+      [{
+        "name": "Soothe",
+        "skillLevel": 1,
+        "range": 1,
+        "areaOfEffect": "square",
+        "effects": {
+          "heal": 25
+        },
+        "terrainEffects": {
+          "smoothsEarth": true,
+          "breakDestructibles": true
+        },
+        "tags": ["heal", "smoothsEarth", "breakDestructibles"]
+      }], 
+      [{
+        "name": "Soothe 2",
+        "skillLevel": 2,
+        "range": 1,
+        "areaOfEffect": "square",
+        "effects": {
+          "heal": 35
+        },
+        "terrainEffects": {
+          "smoothsEarth": true,
+          "breakDestructibles": true
+        },
+        "tags": ["heal", "smoothsEarth", "breakDestructibles"]
+      }], 
+      [{
+        "name": "Soothe 3",
+        "skillLevel": 3,
+        "range": 1,
+        "areaOfEffect": "square",
+        "effects": {
+          "heal": 45
+        },
+        "terrainEffects": {
+          "smoothsEarth": true,
+          "breakDestructibles": true
+        },
+        "tags": ["heal", "smoothsEarth", "breakDestructibles"]
+      }]
+    ],
+    [
+      [{
+        "name": "Immovable",
+        "skillLevel": 1,
+        "passive": true,
+        "areaOfEffect": "self",
+        "description": "Immunity to knockback and pull effects.",
+        "tags": ["immuneToKnockback", "immuneToPull"]
+      }]
+    ],
+    [
+      [{
+        "name": "Stalagmite",
+        "skillLevel": 1,
+        "range": 1,
+        "areaOfEffect": "triangle",
+        "terrainEffects": {
+          "earthDown": 1,
+          "createStalagmites": true
+        },
+        "description": "Requires empty space. Applies 'Stalagmite' to hit ground: impassable, breakable spikes.",
+        "tags": ["earthDown", "createStalagmites"]
+      }], 
+      [{
+        "name": "Stalagmite 2",
+        "skillLevel": 2,
+        "range": 2,
+        "areaOfEffect": "cross",
+        "terrainEffects": {
+          "earthDown": 1,
+          "createStalagmites": true
+        },
+        "description": "Requires empty space. Applies 'Stalagmite' to hit ground: impassable, breakable spikes.",
+        "tags": ["earthDown", "createStalagmites"]
+      }], 
+      [{
+        "name": "Stalagmite 3",
+        "skillLevel": 3,
+        "range": 2,
+        "areaOfEffect": "square",
+        "terrainEffects": {
+          "earthDown": 1,
+          "createStalagmites": true
+        },
+        "description": "Requires empty space. Applies 'Stalagmite' to hit ground: impassable, breakable spikes.",
+        "tags": ["earthDown", "createStalagmites"]
+      }]
+    ],
+    [
+      [{
+        "name": "Affinity",
+        "skillLevel": 1,
+        "description": "Access an additional known ability from another breed, constrained by this breed's elemental affinities.",
+        "tags": ["affinity"]
+      }]
+    ]
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "formalName": "Woods Witch",
+  "availableFromStart": true,
+  "requirements": {
+    "goblin": 5
+  },
+  "baseHP": 70,
+  "description": "Trustworthy, level-headed, with a truer understanding of life than most goblins. A ranged healer with  a variety of other capabilities.",
+  "affinity": ["water", "earth", "life"],
+  "skills": [
+    [
+      [{
+        "name": "Frost",
+        "skillLevel": 1,
+        "range": 3,
+        "areaOfEffect": "cross",
+        "effects": {
+          "damage": 20,
+          "unnerve": 1
+        },
+        "terrainEffects": {
+          "water": 5
+        },
+        "tags": ["damage", "unnerve", "water"]
+      }], 
+      [{
+        "name": "Frost 2",
+        "skillLevel": 2,
+        "range": 3,
+        "areaOfEffect": "cross",
+        "effects": {
+          "damage": 20,
+          "unnerve": 2
+        },
+        "terrainEffects": {
+          "water": 8
+        },
+        "tags": ["damage", "unnerve", "water"]
+      }], 
+      [{
+        "name": "Frost 3",
+        "skillLevel": 3,
+        "range": 3,
+        "areaOfEffect": "cross",
+        "effects": {
+          "damage": 20,
+          "unnerve": 3
+        },
+        "terrainEffects": {
+          "water": 10
+        },
+        "tags": ["damage", "unnerve", "water"]
+      }]
+    ],
+    [
+      [{
+        "name": "Sprout",
+        "skillLevel": 1,
+        "range": 4,
+        "areaOfEffect": "cross",
+        "effects": {
+          "heal": 40
+        },
+        "terrainEffects": {
+          "growth": 4
+        },
+        "tags": ["heal", "growth"]
+      }], 
+      [{
+        "name": "Sprout 2",
+        "skillLevel": 2,
+        "range": 4,
+        "areaOfEffect": "cross",
+        "effects": {
+          "heal": 55
+        },
+        "terrainEffects": {
+          "growth": 9
+        },
+        "tags": ["heal", "growth"]
+      }], 
+      [{
+        "name": "Flourish",
+        "skillLevel": 3,
+        "range": 4,
+        "areaOfEffect": "cross",
+        "effects": {
+          "heal": 65
+        },
+        "terrainEffects": {
+          "growth": 9,
+          "createBrush": true
+        },
+        "tags": ["heal", "growth", "createBrush"]
+      }]
+    ],
+    [
+      [{
+        "name": "Mound",
+        "skillLevel": 1,
+        "range": 4,
+        "areaOfEffect": "cross",
+        "effects": {
+          "damage": 30
+        },
+        "terrainEffects": {
+          "earthUp": 2
+        },
+        "tags": ["damage", "earthUp"]
+      }], 
+      [{
+        "name": "Heap",
+        "skillLevel": 2,
+        "range": 4,
+        "areaOfEffect": "cross",
+        "effects": {
+          "damage": 40
+        },
+        "terrainEffects": {
+          "earthUp": 2,
+          "water": 5
+        },
+        "tags": ["damage", "earthUp", "water"]
+      }], 
+      [{
+        "name": "Tangle Heap",
+        "skillLevel": 3,
+        "range": 4,
+        "areaOfEffect": "cross",
+        "effects": {
+          "damage": 40
+        },
+        "terrainEffects": {
+          "earthUp": 2,
+          "water": 5,
+          "createBrush": true
+        },
+        "tags": ["damage", "earthUp", "water", "createBrush"]
+      }]
+    ],
+    [
+      [{
+        "name": "Clear",
+        "skillLevel": 1,
+        "range": 4,
+        "areaOfEffect": "cross",
+        "effects": {
+          "heal": 35
+        },
+        "terrainEffects": {
+          "breakDestructibles": true
+        },
+        "tags": ["heal", "breakDestructibles"]
+      }]
+    ],
+    [
+      [{
+        "name": "Scamper",
+        "skillLevel": 1,
+        "range": 7,
+        "areaOFEffect": "line",
+        "effects": {
+          "moveCasterToTarget": true,
+          "removeAllStatusEffects": true
+        },
+        "terrainEffects": {
+          "growth": 9,
+          "water": 5
+        },
+        "tags": ["moveCasterToTarget", "removeAllStatusEffects", "growth", "water"]
+      }]
+    ],
+    [
+      [{
+        "name": "Forestwalk",
+        "skillLevel": 1,
+        "passive": true,
+        "areaOfEffect": "self",
+        "description": "Move through brush unaffected.",
+        "tags": ["movement"]
+      }]
+    ],
+    [
+      [{
+        "name": "Affinity",
+        "skillLevel": 1,
+        "description": "Access an additional known ability from another breed, constrained by this breed's elemental affinities.",
+        "tags": ["affinity"]
+      }]
+    ]
+  ]
+}

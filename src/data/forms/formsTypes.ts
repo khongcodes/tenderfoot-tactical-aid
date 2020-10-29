@@ -13,6 +13,7 @@ const formNameKeys = <const> [
   "polearm",
   "spellsword",
   "battlemage",
+  "archer",
   "woodsWitch",
   "wizard",
   "1",
@@ -26,7 +27,7 @@ const formNameKeys = <const> [
   "9",
   "0",
 ];
-type FormNamesType = typeof formNameKeys[number]
+export type FormNamesType = typeof formNameKeys[number]
 
 
 const primaryEffectNames = <const> [
@@ -40,7 +41,8 @@ const primaryEffectNames = <const> [
   "reduceIncomingDamage",
   "doubleDamageFromBehind",
   "stepIntoKnockback",
-  "movesCasterToTarget"
+  "moveCasterToTarget",
+  "removeAllStatusEffects"
 ];
 
 const terrainEffectNames = <const> [
@@ -51,6 +53,7 @@ const terrainEffectNames = <const> [
   "fire",
   "smoothsEarth",
   "createBrush",
+  "createStalagmite",
   "breakDestructibles"
 ];
 
@@ -62,17 +65,30 @@ const areasOfEffectNames = <const> [
   "single",
   "cross",
   "square",
+  "diamond",      // archer/great salvo 2, wizard/whirlwind 2
   "self",
   "triangle",
   "cone 1",
-  "cone 2",
-  "C",
+  "cone 2",       // battlemage/surge 3
+  "C",            // battlemage/thirst 3
   "line",
+  "lineThrough",  // archer/lance
+  "lineToCross",  // archer/frag lance
   "variable",
   "allAlliesInRange",
+  "allUnitsFacingTarget"
 ];
 
 type AreasOfEffectNamesType = typeof areasOfEffectNames[number];
+
+
+const additionalTags = <const> [
+  "affinity",
+  "movement",
+  "reduceDamage",
+  "bonusDamage",
+]
+type AdditionalTagNamesType = typeof additionalTags[number];
 
 /////////////////////////////////////////////////////////////////////////////////
 //                                                                          TYPES
@@ -101,7 +117,7 @@ type SkillType = {
   passive?: boolean;
 
   range?: string | number;
-  areaOfEffect: AreasOfEffectNamesType;
+  areaOfEffect?: AreasOfEffectNamesType;
 
   effects?: { 
     [key in PrimaryEffectNamesType]: number | boolean | undefined;
@@ -114,7 +130,7 @@ type SkillType = {
   };
 
   description?: string;
-  tags: AllEffectNames[];
+  tags: Array<AllEffectNames | AdditionalTagNamesType>;
 }[]
 
 type SkillBranch = SkillType[];

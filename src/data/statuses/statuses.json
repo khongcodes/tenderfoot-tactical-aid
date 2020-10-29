@@ -1,5 +1,6 @@
 {
   "numb": {
+    "type": "debuff",
     "effects": [
       {
         "tag": "plusMaxHealth",
@@ -9,18 +10,53 @@
         "tag": "reduceIncomingUnnerve",
         "number": 2
       }
-    ]
+    ],
+    "forms": ["goblin"]
+  },
+  "slow": {
+    "type": "debuff",
+    "effects": [
+      {
+        "tag": "reduceMoveRange",
+        "number": 2
+      }
+    ],
+    "forms": ["archer"]
+  },
+  "slow 2": {
+    "type": "debuff",
+    "effects": [
+      {
+        "tag": "reduceMoveRange",
+        "number": 3
+      }
+    ],
+    "forms": ["archer"]
+  },
+  "poison": {
+    "type": "debuff",
+    "effects": [
+      {
+        "tag": "damage",
+        "number": 1,
+        "perTicks": 5
+      }
+    ],
+    "forms": ["archer"]
   },
   "prideful": {
+    "type": "buff",
     "effects": [
       {
         "tag": "healOverTime",
         "number": 1,
         "perTicks": 16
       }
-    ]
+    ],
+    "forms": ["knight"]
   },
   "prideful 2": {
+    "type": "buff",
     "effects": [
       {
         "tag": "healOverTime",
@@ -31,9 +67,11 @@
         "tag": "plusMaxHealth",
         "number": 30
       }
-    ]
+    ],
+    "forms": ["knight"]
   },
   "inspired": {
+    "type": "buff",
     "effects": [
       {
         "tag": "reduceIncomingUnnerve",
@@ -45,6 +83,7 @@
       {
         "tag": "immuneToPull"
       }
-    ]
+    ],
+    "forms": ["polearm"]
   }
 }

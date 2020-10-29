@@ -1,0 +1,232 @@
+{
+  "formalName": "Wizard",
+  "availableFromStart": true,
+  "requirements": {
+    "archer": 4
+  },
+  "baseHP": 65,
+  "description": "A well rounded mage witha mild affinity for the flame. Tends toward snark.",
+  "affinity": ["fire", "water", "earth"],
+  "skills": [
+    [
+      [{
+        "name": "Furrow",
+        "skillLevel": 1,
+        "range": 5,
+        "areaOfEffect": "line",
+        "effects": {
+          "damage": 30
+        },
+        "terrainEffects": {
+          "earthDown": 1,
+          "breakDestructibles": true
+        },
+        "tags": ["damage", "earthDown", "breakDestructibles"]
+      }],
+      [{
+        "name": "Furrow 2",
+        "skillLevel": 2,
+        "range": 5,
+        "areaOfEffect": "line",
+        "effects": {
+          "damage": 40
+        },
+        "terrainEffects": {
+          "earthDown": 2,
+          "breakDestructibles": true
+        },
+        "tags": ["damage", "earthDown", "breakDestructibles"]
+      }],
+      [{
+        "name": "Furrow 3",
+        "skillLevel": 3,
+        "range": 5,
+        "areaOfEffect": "line",
+        "effects": {
+          "damage": 50
+        },
+        "terrainEffects": {
+          "earthDown": 3,
+          "breakDestructibles": true
+        },
+        "tags": ["damage", "earthDown", "breakDestructibles"]
+      }]
+    ],
+    [
+      [{
+        "name": "Sprites",
+        "skillLevel": 1,
+        "range": 5,
+        "areaOfEffect": "line",
+        "effects": {
+          "damage": 35
+        },
+        "terrainEffects": {
+          "water": 7
+        },
+        "tags": ["damage", "water"]
+      }],
+      [{
+        "name": "Sprites 2",
+        "skillLevel": 2,
+        "range": 5,
+        "areaOfEffect": "line",
+        "effects": {
+          "damage": 45
+        },
+        "terrainEffects": {
+          "water": 9
+        },
+        "tags": ["damage", "water"]
+      }],
+      [{
+        "name": "Thunder Sprites",
+        "skillLevel": 3,
+        "range": 5,
+        "areaOfEffect": "variable",
+        "effects": {
+          "damage": 30
+        },
+        "description": "Spreads across water - if water terrain is passed through with the skill's Line area of effect",
+        "tags": ["damage"]
+      }]
+    ],
+    [
+      [{
+        "name": "Spark",
+        "skillLevel": 1,
+        "range": 3,
+        "areaOfEffect": "single",
+        "effects": {
+          "damage": 45
+        },
+        "terrainEffects": {
+          "fire": 9
+        },
+        "tags": ["damage", "fire"]
+      }],
+      [{
+        "name": "Spark 2",
+        "skillLevel": 2,
+        "range": 3,
+        "areaOfEffect": "single",
+        "effects": {
+          "damage": 60
+        },
+        "terrainEffects": {
+          "fire": 9
+        },
+        "tags": ["damage", "fire"]
+      }],
+      [{
+        "name": "Combust",
+        "skillLevel": 3,
+        "range": 3,
+        "areaOfEffect": "cross",
+        "effects": {
+          "damage": 60
+        },
+        "terrainEffects": {
+          "fire": 9,
+          "earthDown": 1
+        },
+        "tags": ["damage", "fire", "earthDown"]
+      }]
+    ],
+    [
+      [{
+        "name": "Meteor",
+        "skillLevel": 1,
+        "range": 5,
+        "areaOfEffect": "cross",
+        "effects": {
+          "damage": 25,
+          "knockback": 1
+        },
+        "terrainEffects": {
+          "earthDown": 2,
+          "breakDestructibles": true
+        },
+        "tags": ["damage", "knockback", "earthDown", "breakDestructibles"]
+      }],
+      [{
+        "name": "Ice Meteor",
+        "skillLevel": 2,
+        "range": 5,
+        "areaOfEffect": "cross",
+        "effects": {
+          "damage": 35,
+          "knockback": 1
+        },
+        "terrainEffects": {
+          "earthDown": 2,
+          "water": 10,
+          "breakDestructibles": true
+        },
+        "tags": ["damage", "knockback", "earthDown", "water", "breakDestructibles"]
+      }],
+      [{
+        "name": "Ice Meteor 2",
+        "skillLevel": 3,
+        "range": 5,
+        "areaOfEffect": "cross",
+        "effects": {
+          "damage": 45,
+          "knockback": 2
+        },
+        "terrainEffects": {
+          "earthDown": 3,
+          "water": 15,
+          "breakDestructibles": true
+        },
+        "tags": ["damage", "knockback", "earthDown", "water", "breakDestructibles"]
+      }]
+    ],
+    [
+      [{
+        "name": "Whirlwind",
+        "skillLevel": 1,
+        "range": 5,
+        "areaOfEffect": "cross",
+        "effects": {
+          "damage": 15,
+          "pull": 1
+        },
+        "tags": ["damage", "pull"]
+      }],
+      [{
+        "name": "Whirlwind 2",
+        "skillLevel": 2,
+        "range": 5,
+        "areaOfEffect": "diamond",
+        "effects": {
+          "damage": 15,
+          "pull": 2
+        },
+        "tags": ["damage", "pull"]
+      }]
+    ],
+    [
+      [{
+        "name": "Flare",
+        "skillLevel": 1,
+        "range": "1-1",
+        "areaOfEffect": "allUnitsFacingTarget",
+        "effects": {
+          "damage": 10,
+          "unnerve": 1
+        },
+        "description": "Hits all units facing target.",
+        "tags": ["damage", "unnerve"]
+      }]
+    ],
+    [
+      [{
+        "name": "Affinity",
+        "skillLevel": 1,
+        "description": "Access an additional known ability from another breed, constrained by this breed's elemental affinities.",
+        "tags": ["affinity"]
+      }]
+    ]
+  ]
+}

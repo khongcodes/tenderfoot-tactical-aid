@@ -1,0 +1,237 @@
+{
+  "formalName": "Archer",
+  "availableFromStart": true,
+  "requirements": {
+    "goblin": 4
+  },
+  "baseHP": 65,
+  "description": "With a keen eye and a strong arm, experts at dealing focused damage from a great distance.",
+  "skills": [
+    [
+      [{
+        "name": "Fire Arrow",
+        "skillLevel": 1,
+        "range": "3-5",
+        "areaOfEffect": "single",
+        "effects": {
+          "damage": 25
+        },
+        "terrainEffects": {
+          "fire": 7
+        },
+        "tags": ["damage", "fire"]
+      }], 
+      [{
+        "name": "Fire Salvo",
+        "skillLevel": 2,
+        "range": "3-5",
+        "areaOfEffect": "cross",
+        "effects": {
+          "damage": 20
+        },
+        "terrainEffects": {
+          "fire": 7
+        },
+        "tags": ["damage", "fire"]
+      }], 
+      [{
+        "name": "Fire Salvo 2",
+        "skillLevel": 3,
+        "range": "3-5",
+        "areaOfEffect": "single",
+        "effects": {
+          "damage": 30
+        },
+        "terrainEffects": {
+          "fire": 9
+        },
+        "tags": ["damage", "fire"]
+      }]
+    ],
+    [
+      [{
+        "name": "Lance",
+        "skillLevel": 1,
+        "range": "1-4",
+        "areaOfEffect": "lineThrough",
+        "effects": {
+          "damage": 30
+        },
+        "terrainEffects": {
+          "breakDestructibles": true
+        },
+        "tags": ["damage", "breakDestructibles"]
+      }], 
+      [{
+        "name": "Frag Lance",
+        "skillLevel": 2,
+        "range": "1-4",
+        "areaOfEffect": "lineToCross",
+        "effects": {
+          "damage": 30
+        },
+        "terrainEffects": {
+          "breakDestructibles": true,
+          "earthDown": 1
+        },
+        "tags": ["damage", "breakDestructibles", "earthDown"]
+      }], 
+      [{
+        "name": "Frag Lance 2",
+        "skillLevel": 3,
+        "range": "1-4",
+        "areaOfEffect": "line",
+        "effects": {
+          "damage": 40
+        },
+        "terrainEffects": {
+          "breakDestructibles": true,
+          "earthDown": 2
+        },
+        "tags": ["damage", "breakDestructibles", "earthDown"]
+      }]
+    ],
+    [
+      [{
+        "name": "Ice Arrow",
+        "skillLevel": 1,
+        "range": "3-5",
+        "areaOfEffect": "single",
+        "effects": {
+          "damage": 25
+        },
+        "terrainEffects": {
+          "water": 5
+        },
+        "statusEffects": {
+          "slow": 300
+        },
+        "tags": ["damage", "water", "slow"]
+      }], 
+      [{
+        "name": "Ice Arrow 2",
+        "skillLevel": 2,
+        "range": "3-5",
+        "areaOfEffect": "single",
+        "effects": {
+          "damage": 35
+        },
+        "terrainEffects": {
+          "water": 10
+        },
+        "statusEffects": {
+          "slow 2": 300
+        },
+        "tags": ["damage", "water", "slow 2"]
+      }], 
+      [{
+        "name": "Ice Arrow 3",
+        "skillLevel": 3,
+        "range": "3-5",
+        "areaOfEffect": "single",
+        "effects": {
+          "damage": 45
+        },
+        "terrainEffects": {
+          "water": 10
+        },
+        "statusEffects": {
+          "slow 2": 300
+        },
+        "tags": ["damage", "water", "slow 2"]
+      }]
+    ],
+    [
+      [{
+        "name": "Salvo",
+        "skillLevel": 1,
+        "range": "3-5",
+        "areaOfEffect": "cross",
+        "effects": {
+          "damage": 15
+        },
+        "tags": ["damage"]
+      }], 
+      [{
+        "name": "Great Salvo",
+        "skillLevel": 2,
+        "range": "3-5",
+        "areaOfEffect": "square",
+        "effects": {
+          "damage": 15
+        },
+        "tags": ["damage"]
+      }], 
+      [{
+        "name": "Great Salvo 2",
+        "skillLevel": 3,
+        "range": "3-5",
+        "areaOfEffect": "diamond",
+        "effects": {
+          "damage": 15
+        },
+        "tags": ["damage"]
+      }]
+    ],
+    [
+      [{
+        "name": "Poison Arrow",
+        "skillLevel": 1,
+        "range": "3-5",
+        "areaOfEffect": "single",
+        "effects": {
+          "damage": 20
+        },
+        "terrainEffects": {
+          "growth": 2
+        },
+        "statusEffects": {
+          "poison": 200
+        },
+        "tags": ["damage", "growth", "poison"]
+      }], 
+      [{
+        "name": "Poison Salvo",
+        "skillLevel": 2,
+        "range": "3-5",
+        "areaOfEffect": "cross",
+        "effects": {
+          "damage": 15
+        },
+        "terrainEffects": {
+          "growth": 4
+        },
+        "statusEffects": {
+          "poison": 200
+        },
+        "tags": ["damage", "growth", "poison"]
+      }], 
+      [{
+        "name": "Poison Salvo 2",
+        "skillLevel": 3,
+        "range": "3-5",
+        "areaOfEffect": "cross",
+        "effects": {
+          "damage": 15
+        },
+        "terrainEffects": {
+          "growth": 7
+        },
+        "statusEffects": {
+          "poison": 300
+        },
+        "tags": ["damage", "growth", "poison"]
+      }]
+    ],
+    [
+      [{
+        "name": "Lofty",
+        "skillLevel": 1,
+        "passive": true,
+        "areaOfEffect": "self",
+        "description": "+5 damage per height advantage over target.",
+        "tags": ["bonusDamage"]
+      }]
+    ]
+  ]
+}
