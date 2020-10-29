@@ -1,0 +1,192 @@
+{
+  "formalName": "Druid",
+  "availableFromStart": false,
+  "requirements": {
+    "woodsWitch": 7
+  },
+  "baseHP": 80,
+  "description": "Cause and cure of ailments. Ranged earth and plant mage.",
+  "affinity": ["earth", "life"],
+  "unlockSite": "west-of-north",
+  "skills": [
+    [
+      [{
+        "name": "Bloom",
+        "skillLevel": 1,
+        "range": 4,
+        "areaOfEffect": "square",
+        "effects": {
+          "heal": 40
+        },
+        "terrainEffects": {
+          "growth": 9
+        },
+        "tags": ["heal", "growth"]
+      }],
+      [{
+        "name": "Bloom 2",
+        "skillLevel": 2,
+        "range": 4,
+        "areaOfEffect": "square",
+        "effects": {
+          "heal": 60
+        },
+        "terrainEffects": {
+          "growth": 9
+        },
+        "tags": ["heal", "growth"]
+      }]
+    ],
+    [
+      [{
+        "name": "Encase",
+        "skillLevel": 1,
+        "range": 4,
+        "areaOfEffect": "single",
+        "effects": {
+          "heal": 30
+        },
+        "statusEffects": {
+          "cocoon": 720
+        },
+        "tags": ["heal", "cocoon"]
+      }],
+      [{
+        "name": "Encase 2",
+        "skillLevel": 2,
+        "range": 4,
+        "areaOfEffect": "cross",
+        "effects": {
+          "heal": 30
+        },
+        "statusEffects": {
+          "cocoon": 720
+        },
+        "tags": ["heal", "cocoon"]
+      }]
+    ],
+    [
+      [{
+        "name": "Miasma",
+        "skillLevel": 1,
+        "range": 4,
+        "areaOfEffect": "diamond",
+        "effects": {
+          "damage": 5
+        },
+        "statusEffects": {
+          "poison": 200
+        },
+        "tags": ["damage", "poison"]
+      }],
+      [{
+        "name": "Miasma 2",
+        "skillLevel": 2,
+        "range": 4,
+        "areaOfEffect": "diamond",
+        "effects": {
+          "damage": 5
+        },
+        "statusEffects": {
+          "poison": 300
+        },
+        "tags": ["damage", "poison"]
+      }]
+    ],
+    [
+      [{
+        "name": "Renew",
+        "skillLevel": 1,
+        "range": 4,
+        "areaOfEffect": "single",
+        "terrainEffects": {
+          "growth": 4
+        },
+        "statusEffects": {
+          "regen": 480
+        },
+        "tags": ["growth", "regen"]
+      }],
+      [{
+        "name": "Renew 2",
+        "skillLevel": 2,
+        "range": 4,
+        "areaOfEffect": "cross",
+        "terrainEffects": {
+          "growth": 4
+        },
+        "statusEffects": {
+          "regen": 480
+        },
+        "tags": ["growth", "regen"]
+      }],
+      [{
+        "name": "Renew 3",
+        "skillLevel": 3,
+        "range": 4,
+        "areaOfEffect": "single",
+        "effects": {
+          "heal": 30
+        },
+        "terrainEffects": {
+          "growth": 4
+        },
+        "statusEffects": {
+          "regen": 480
+        },
+        "tags": ["heal", "growth", "regen"]
+      }]
+    ],
+    [
+      [{
+        "name": "Hedge",
+        "skillLevel": 1,
+        "range": 4,
+        "areaOfEffect": "row",
+        "terrainEffects": {
+          "growth": 9,
+          "createBrush": true
+        },
+        "tags": ["growth", "createBrush"]
+      }]
+    ],
+    [
+      [{
+        "name": "Hill",
+        "skillLevel": 1,
+        "range": 4,
+        "areaOfEffect": "cross",
+        "effects": {
+          "damage": 30
+        },
+        "terrainEffects": {
+          "earthUp": 2,
+          "breakDestructibles": true
+        },
+        "tags": ["damage", "earthUp", "breakDestructibles"]
+      }],
+      [{
+        "name": "Hill 2",
+        "skillLevel": 1,
+        "range": 4,
+        "areaOfEffect": "square",
+        "effects": {
+          "damage": 30
+        },
+        "terrainEffects": {
+          "earthUp": 6,
+          "breakDestructibles": true
+        },
+        "tags": ["damage", "earthUp", "breakDestructibles"]
+      }]
+    ],
+    [
+      [{
+        "name": "Affinity",
+        "skillLevel": 1,
+        "description": "Access an additional known ability from another breed, constrained by this breed's elemental affinities.",
+        "tags": ["affinity"]
+      }]
+    ]
+  ]
+}

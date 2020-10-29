@@ -22,7 +22,7 @@ const formNameKeys = <const> [
   "shaman",
   "5",
   "6",
-  "7",
+  "druid",
   "8",
   "9",
   "0",
@@ -74,6 +74,7 @@ const areasOfEffectNames = <const> [
   "line",
   "lineThrough",  // archer/lance
   "lineToCross",  // archer/frag lance
+  "row",          // druid/hedge
   "variable",
   "allAlliesInRange",
   "allUnitsFacingTarget"

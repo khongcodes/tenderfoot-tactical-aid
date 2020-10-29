@@ -8,6 +8,8 @@ const statusNames = <const> [
   "prideful",
   "prideful 2",
   "inspired",
+  "cocoon",
+  "regen"
 ];
 
 const statusEffectNames = <const> [

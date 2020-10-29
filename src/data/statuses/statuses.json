@@ -42,7 +42,7 @@
         "perTicks": 5
       }
     ],
-    "forms": ["archer"]
+    "forms": ["archer", "druid"]
   },
   "prideful": {
     "type": "buff",
@@ -85,5 +85,26 @@
       }
     ],
     "forms": ["polearm"]
+  },
+  "cocoon": {
+    "type": "buff",
+    "effects": [
+      {
+        "tag": "plusMaxHealth",
+        "number": 30
+      }
+    ],
+    "forms": ["druid"]
+  },
+  "regen": {
+    "type": "buff",
+    "effects": [
+      {
+        "tag": "healOverTime",
+        "number": 1,
+        "perTicks": 8
+      }
+    ],
+    "forms": ["druid"]
   }
 }
