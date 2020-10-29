@@ -12,4 +12,28 @@
 ////////////////                                                                         STYLES
 
 #layoutRoot
-  background-color: pink
+  // background-color: pink
+
+.viewRootContainer
+
+  &.home
+
+    .openingTextContainer
+      
+      .openingDialogueContainer
+        background-color: $dialogue-box
+        max-width: space(100)
+        box-sizing: border-box
+        margin: space(3) auto
+        padding: space(1.5) space(6) space(2) space(3)
+        border-radius: space(1.5)
+
+        p:first-child
+          @include opening-dialogue-speaker-type
+          margin-block-start: space(1);
+          margin-block-end: space(1);
+
+        p:nth-child(2)
+          @include opening-dialogue-text-type
+          margin-block-start: space(0)
+          margin-block-end: space(1)

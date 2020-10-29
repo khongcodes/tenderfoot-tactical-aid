@@ -9,6 +9,11 @@
 //    > Animation
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
+////////////////                                                                          SETUP
+
+@import 'fonts';
+
+///////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////                                                                    BREAKPOINTS
 
 $mobile-breakpoint: 788px;
@@ -39,20 +44,10 @@ $space-unit: 8px;
 ///////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////                                                                         COLORS
 
+$background-dark-gray: #2f3b3b;
 
-
-///////////////////////////////////////////////////////////////////////////////////////////////
-////////////////                                                                TYPE DEFINITION
-
-// $inter-font-path: "../fonts/inter/";
-
-// @font-face {
-//   font-family: "Inter";
-//   font-weight: 300;
-//   src: url("#{$inter-font-path}/Inter-Light.woff") format("woff");
-// }
-
-
+$dialogue-box: #554e45;
+$dialogue-text: #c0d4d4;
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -62,7 +57,6 @@ $space-unit: 8px;
   margin-block-start: $value;
   margin-block-end: $value;
 }
-
 
 @mixin page-title-type {
   @include makeBlockMargins(0);
@@ -74,6 +68,22 @@ $space-unit: 8px;
   // font-size: 15px;
   // line-height: 21px;
   // font-weight: 400;
+}
+
+@mixin opening-dialogue-speaker-type {
+  color: $dialogue-text;
+  font-family: Deja Vu Sans;
+  font-weight: 700;
+  font-size: space(1.7);
+}
+
+@mixin opening-dialogue-text-type {
+  color: $dialogue-text;
+  font-family: Deja Vu Sans;
+  font-style: normal;
+  font-style: oblique;
+  font-size: space(1.6);
+  line-height: space(2.4);
 }
 
 @mixin misc-link-styling {

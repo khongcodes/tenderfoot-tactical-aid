@@ -23,7 +23,7 @@ type LayoutProps = {
 
 const Header: React.FC = () => (
   <div>
-    I'm header
+    Tenderfoot Tactical Aid
   </div>
 );
 

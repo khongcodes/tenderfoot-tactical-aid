@@ -1,0 +1,61 @@
+///////////////////////////////////////////////////////////////////////////////////////////////
+////////////////                                                                TYPE DEFINITION
+
+$deja-vu-sans-font-path: "../fonts/DejaVuSans/";
+$deja-vu-sans-condensed-font-path: "../fonts/DejaVuSansCondensed/";
+
+@font-face {
+  font-family: "Deja Vu Sans Condensed";
+  src: url("#{$deja-vu-sans-condensed-font-path}/DejaVuSansCondensed.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Deja Vu Sans Condensed";
+  src: url("#{$deja-vu-sans-condensed-font-path}/DejaVuSansCondensed-Oblique.ttf") format("truetype");
+  font-weight: 400;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: "Deja Vu Sans Condensed";
+  src: url("#{$deja-vu-sans-condensed-font-path}/DejaVuSansCondensed-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Deja Vu Sans Condensed";
+  src: url("#{$deja-vu-sans-condensed-font-path}/DejaVuSansCondensed-BoldOblique.ttf") format("truetype");
+  font-weight: 700;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: "Deja Vu Sans";
+  src: url("#{$deja-vu-sans-font-path}/DejaVuSans.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Deja Vu Sans";
+  src: url("#{$deja-vu-sans-font-path}/DejaVuSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Deja Vu Sans";
+  src: url("#{$deja-vu-sans-font-path}/DejaVuSans-Oblique.ttf") format("truetype");
+  font-weight: 400;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: "Deja Vu Sans";
+  src: url("#{$deja-vu-sans-font-path}/DejaVuSans-BoldOblique.ttf") format("truetype");
+  font-weight: 700;
+  font-style: oblique;
+}

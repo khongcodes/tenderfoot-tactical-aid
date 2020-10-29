@@ -30,7 +30,7 @@ const OpeningText = () => {
   const openTextArr = openingTextJson as OpeningTextJsonType;
   const displayDialogue = (dialogueLine: DialogueLineType) => {
     return (
-      <div className={`openingTextDialogue`}>
+      <div className={`openingDialogueContainer`}>
         <p>{dialogueLine.speaker}</p>
         <p>{dialogueLine.text}</p>
       </div>
@@ -46,7 +46,7 @@ const OpeningText = () => {
 
 const Home = () => {
   return (
-    <div className="homeViewRoot">
+    <div className="viewRootContainer home">
       <OpeningText />
     </div>
   )
