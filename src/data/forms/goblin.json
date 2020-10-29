@@ -1,0 +1,217 @@
+{
+  "formalName": "Goblin",
+  "availableFromStart": true,
+  "requirements": {},
+  "baseHP": 75,
+  "description": "Unskilled mutt. Extremely common and just as versatile. Better with tools than some of the more elaborate breeds. Caring to friends and nasty to foes.",
+  "skills": [
+    [
+      [
+        {
+          "name": "Attack (bow)",
+          "skillLevel": 1,
+          "range": "3-5",
+          "areaOfEffect": "single",
+          "effects": {
+            "damage": 30
+          },
+          "tags": ["damage"]
+        },
+        {
+          "name": "Attack (sword)",
+          "skillLevel": 1,
+          "range": 1,
+          "areaOfEffect": "single",
+          "effects": {
+            "damage": 40
+          },
+          "tags": ["damage"]
+        },
+        {
+          "name": "Attack (slingshot)",
+          "skillLevel": 1,
+          "range": 3,
+          "areaOfEffect": "single",
+          "effects": {
+            "damage": 30
+          },
+          "tags": ["damage"]
+        }
+      ]
+    ],
+    [
+      [{
+        "name": "First aid",
+        "skillLevel": 1,
+        "range": 1,
+        "areaOfEffect": "single",
+        "effects": {
+          "heal": 55
+        },
+        "tags": ["heal"]
+      }],
+      [{
+        "name": "First aid 2",
+        "skillLevel": 2,
+        "range": 1,
+        "areaOfEffect": "single",
+        "effects": {
+          "heal": 70
+        },
+        "tags": ["heal"]
+      }]
+    ],
+    [
+      [{
+        "name": "Grenade",
+        "skillLevel": 1,
+        "range": 2,
+        "areaOfEffect": "cross",
+        "effects": {
+          "damage": 25
+        },
+        "terrainEffects": {
+          "breakDestructibles": true,
+          "earthDown": 1
+        },
+        "tags": ["damage", "breakDestructibles", "earthDown"]
+      }],
+      [{
+        "name": "Grenade 2",
+        "skillLevel": 2,
+        "range": 2,
+        "areaOfEffect": "cross",
+        "effects": {
+          "damage": 30
+        },
+        "terrainEffects": {
+          "breakDestructibles": true,
+          "earthDown": 2
+        },
+        "tags": ["damage", "breakDestructibles", "earthDown"]
+      }],
+      [{
+        "name": "Grenade 3",
+        "skillLevel": 3,
+        "range": 2,
+        "areaOfEffect": "square",
+        "effects": {
+          "damage": 30
+        },
+        "terrainEffects": {
+          "breakDestructibles": true,
+          "earthDown": 2
+        },
+        "tags": ["damage", "breakDestructibles", "earthDown"]
+      }]
+    ],
+    [
+      [{
+        "name": "Song",
+        "skillLevel": 1,
+        "range": 0,
+        "areaOfEffect": "square",
+        "effects": {
+          "heal": 25,
+          "healSelf": 25
+        },
+        "tags": ["heal", "healSelf"]
+      }],
+      [{
+        "name": "Canticle",
+        "skillLevel": 2,
+        "range": 0,
+        "areaOfEffect": "square",
+        "effects": {
+          "heal": 40,
+          "healSelf": 40
+        },
+        "terrainEffects": {
+          "growth": 2
+        },
+        "tags": ["heal", "healSelf", "growth"]
+      }],
+      [{
+        "name": "Canticle 2",
+        "skillLevel": 3,
+        "range": 0,
+        "areaOfEffect": "square",
+        "effects": {
+          "heal": 55,
+          "healSelf": 55
+        },
+        "terrainEffects": {
+          "growth": 5
+        },
+        "tags": ["heal", "healSelf", "growth"]
+      }]
+    ],
+    [
+      [{
+        "name": "Strangle",
+        "skillLevel": 1,
+        "range": 1,
+        "areaOfEffect": "single",
+        "effects": {
+          "damage": 35,
+          "doubleDamageFromBehind": true
+        },
+        "tags": ["damage", "doubleDamageFromBehind"]
+      }],
+      [{
+        "name": "Garrote",
+        "skillLevel": 2,
+        "range": 1,
+        "areaOfEffect": "single",
+        "effects": {
+          "damage": 45,
+          "doubleDamageFromBehind": true
+        },
+        "terrainEffects": {
+          "water": 2
+        },
+        "tags": ["damage", "doubleDamageFromBehind", "water"]
+      }],
+      [{
+        "name": "Garrote 2",
+        "skillLevel": 3,
+        "range": 1,
+        "areaOfEffect": "single",
+        "effects": {
+          "damage": 55,
+          "doubleDamageFromBehind": true
+        },
+        "terrainEffects": {
+          "water": 2
+        },
+        "tags": ["damage", "doubleDamageFromBehind", "water"]
+      }]
+    ],
+    [
+      [{
+        "name": "Anesthetize",
+        "skillLevel": 1,
+        "range": 5,
+        "areaOfEffect": "single",
+        "terrainEffects": {
+          "growth": 10
+        },
+        "statusEffects": {
+          "numb": 720
+        },
+        "tags": ["growth", "numb", "plusMaxHealth", "reduceIncomingUnnerve"]
+      }]
+    ],
+    [
+      [{
+        "name": "Opportunist",
+        "skillLevel": 1,
+        "passive": true,
+        "range": 1,
+        "areaOfEffect": "self",
+        "description": "When an enemy moves out of an adjacent tile, this unit takes a free attack.",
+        "tags": ["passive"]
+      }]
+    ]
+  ]
+}

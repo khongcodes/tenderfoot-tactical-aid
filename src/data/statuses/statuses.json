@@ -1,0 +1,50 @@
+{
+  "numb": {
+    "effects": [
+      {
+        "tag": "plusMaxHealth",
+        "number": 10
+      },
+      {
+        "tag": "reduceIncomingUnnerve",
+        "number": 2
+      }
+    ]
+  },
+  "prideful": {
+    "effects": [
+      {
+        "tag": "healOverTime",
+        "number": 1,
+        "perTicks": 16
+      }
+    ]
+  },
+  "prideful 2": {
+    "effects": [
+      {
+        "tag": "healOverTime",
+        "number": 1,
+        "perTicks": 16
+      },
+      {
+        "tag": "plusMaxHealth",
+        "number": 30
+      }
+    ]
+  },
+  "inspired": {
+    "effects": [
+      {
+        "tag": "reduceIncomingUnnerve",
+        "number": 1
+      },
+      {
+        "tag": "immuneToKnockback"
+      },
+      {
+        "tag": "immuneToPull"
+      }
+    ]
+  }
+}

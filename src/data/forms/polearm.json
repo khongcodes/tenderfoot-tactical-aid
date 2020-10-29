@@ -1,0 +1,128 @@
+{
+  "formalName": "Polearm",
+    "availableFromStart": true,
+    "requirements": {
+      "knight": 5
+    },
+    "baseHP": 140,
+    "description": "Deliberate and deeply self-confident. Their skill and disposition command respect, even from the most cultivated breeds.",
+    "skills": [
+      [
+        [{
+          "name": "Skewer",
+          "skillLevel": 1,
+          "range": 2,
+          "areaOfEffect": "single",
+          "effects": {
+            "damage": 40
+          },
+          "tags": ["damage"]
+        }], 
+        [{
+          "name": "Skewer 2",
+          "skillLevel": 2,
+          "range": 2,
+          "areaOfEffect": "line",
+          "effects": {
+            "damage": 40
+          },
+          "tags": ["damage"]
+        }]
+      ],
+      [
+        [{
+          "name": "Repulse",
+          "skillLevel": 1,
+          "range": 1,
+          "areaOfEffect": "single",
+          "effects": {
+            "damage": 55,
+            "knockback": 1,
+            "stepIntoKnockback": true
+          },
+          "tags": ["damage", "knockback", "stepIntoKnockback"]
+        }]
+      ],
+      [
+        [{
+          "name": "Jump",
+          "skillLevel": 1,
+          "range": 4,
+          "areaOfEffect": "cross",
+          "effects": {
+            "damage": 30,
+            "knockback": 1,
+            "moveCasterToTarget": true
+          },
+          "description": "Moves caster to target - targeted single space must be unoccupied.",
+          "tags": ["damage", "knockback", "moveCasterToTarget"]
+        }]
+      ],
+      [
+        [{
+          "name": "Praise",
+          "skillLevel": 1,
+          "range": 4,
+          "areaOfEffect": "single",
+          "effects": {
+            "heal": 15,
+            "promote": 2
+          },
+          "tags": ["heal", "promote"]
+        }], 
+        [{
+          "name": "Praise 2",
+          "skillLevel": 2,
+          "range": 4,
+          "areaOfEffect": "cross",
+          "effects": {
+            "heal": 15,
+            "promote": 2
+          },
+          "tags": ["heal", "promote"]
+        }]
+      ],
+      [
+        [{
+          "name": "Inspire",
+          "skillLevel": 1,
+          "range": 3,
+          "areaOfEffect": "allAlliesInRange",
+          "effects": {
+            "heal": 10
+          },
+          "statusEffects": {
+            "inspired": 480
+          },
+          "tags": ["heal", "allAlliesInRange", "inspired"]
+        }]
+      ],
+      [
+        [{
+          "name": "Charge",
+          "skillLevel": 1,
+          "range": 4,
+          "areaOfEffect": "variable",
+          "effects": {
+            "damage": 30,
+            "moveCasterToTarget": true
+          },
+          "description": "Charge with adjacent allies, dealing damage to enemies in your path.",
+          "tags": ["damage", "moveCasterToTarget"]
+        }]
+      ],
+      [
+        [{
+          "name": "Protective",
+          "skillLevel": 1,
+          "passive": true,
+          "areaOfEffect": "cross",
+          "effects": {
+            "reduceIncomingDamage": 40
+          },
+          "description": "Adjacent allies take 40% less damage.",
+          "tags": ["reduceIncomingDamage"]
+        }]
+      ]
+    ]
+}

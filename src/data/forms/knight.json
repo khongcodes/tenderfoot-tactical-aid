@@ -1,0 +1,181 @@
+{
+  "formalName": "Knight",
+  "availableFromStart": true,
+  "requirements": {
+    "goblin": 4
+  },
+  "baseHP": 125,
+  "description": "A common sturdy breed. Good for blocking narrow passages. Natural leaders whose words inspire and demoralize.",
+  "skills": [
+    [
+      [{
+        "name": "Shield Bash",
+        "skillLevel": 1,
+        "range": 1,
+        "areaOfEffect": "single",
+        "effects": {
+          "damage": 45,
+          "knockback": 1
+        },
+        "terrainEffects": {
+          "breakDestructibles": true
+        },
+        "tags": ["damage", "knockback", "breakDestructibles"]
+      }],
+      [{
+        "name": "Shield Bash 2",
+        "skillLevel": 2,
+        "range": 1,
+        "areaOfEffect": "single",
+        "effects": {
+          "damage": 50,
+          "knockback": 2
+        },
+        "terrainEffects": {
+          "breakDestructibles": true
+        },
+        "tags": ["damage", "knockback", "breakDestructibles"]
+      }]
+    ],
+    [
+      [{
+        "name": "Insult",
+        "skillLevel": 1,
+        "range": 4,
+        "areaOfEffect": "single",
+        "effects": {
+          "damage": 15,
+          "unnerve": 2
+        },
+        "tags": ["damage", "unnerve"]
+      }],
+      [{
+        "name": "Insult 2",
+        "skillLevel": 2,
+        "range": 4,
+        "areaOfEffect": "single",
+        "effects": {
+          "damage": 20,
+          "unnerve": 3
+        },
+        "tags": ["damage", "unnerve"]
+      }]
+    ],
+    [
+      [{
+        "name": "Sweeping Blow",
+        "skillLevel": 1,
+        "range": 1,
+        "areaOfEffect": "triangle",
+        "effects": {
+          "damage": 30
+        },
+        "terrainEffects": {
+          "breakDestructibles": true
+        },
+        "tags": ["damage", "breakDestructibles"]
+      }], 
+      [{
+        "name": "Slam",
+        "skillLevel": 2,
+        "range": 1,
+        "areaOfEffect": "triangle",
+        "effects": {
+          "damage": 35,
+          "pull": 1
+        },
+        "terrainEffects": {
+          "breakDestructibles": true,
+          "earthDown": 1
+        },
+        "tags": ["damage", "breakDestructibles", "pull", "earthDown"]
+      }], 
+      [{
+        "name": "Slam 2",
+        "skillLevel": 3,
+        "range": 1,
+        "areaOfEffect": "triangle",
+        "effects": {
+          "damage": 45,
+          "pull": 1
+        },
+        "terrainEffects": {
+          "breakDestructibles": true,
+          "earthDown": 1
+        },
+        "tags": ["damage", "breakDestructibles", "pull", "earthDown"]
+      }]
+    ],
+    [
+      [{
+        "name": "Flex",
+        "skillLevel": 1,
+        "range": 0,
+        "areaOfEffect": "single",
+        "effects": {
+          "healSelf": 25
+        },
+        "terrainEffects": {
+          "growth": 2
+        },
+        "statusEffects": {
+          "prideful": 720
+        },
+        "tags": ["healSelf", "growth", "prideful", "healOverTime"]
+      }], 
+      [{
+        "name": "Gloat",
+        "skillLevel": 2,
+        "range": 0,
+        "areaOfEffect": "single",
+        "effects": {
+          "healSelf": 25
+        },
+        "terrainEffects": {
+          "growth": 4
+        },
+        "statusEffects": {
+          "prideful 2": 720
+        },
+        "tags": ["healSelf", "growth", "prideful 2", "healOverTime", "plusMaxHealth"]
+      }]
+    ],
+    [
+      [{
+        "name": "Headstrong",
+        "skillLevel": 1,
+        "passive": true,
+        "areaOfEffect": "self",
+        "effects": {
+          "unnerve": -1
+        },
+        "description": "Reduce incoming unnerve by 1",
+        "tags": ["reduceIncomingUnnerve"]
+      }], 
+      [{
+        "name": "Headstrong 2",
+        "skillLevel": 2,
+        "passive": true,
+        "areaOfEffect": "self",
+        "effects": {
+          "unnerve": -2
+        },
+        "description": "Reduce incoming unnerve by 2",
+        "tags": ["reduceIncomingUnnerve"]
+      }]
+    ],
+    [
+      [{
+        "name": "Oafish",
+        "skillLevel": 1,
+        "passive": true,
+        "areaOfEffect": "self",
+        "description": "Clear brush while moving",
+        "terrainEffects": {
+          "breakDestructibles": true
+        },
+        "tags": ["breakDestructibles"]
+      }]
+    ]
+  ]
+}

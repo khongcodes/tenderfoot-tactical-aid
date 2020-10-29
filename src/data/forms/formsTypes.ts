@@ -1,4 +1,10 @@
 /////////////////////////////////////////////////////////////////////////////////
+//                                                                        IMPORTS
+
+import { StatusNamesType, StatusEffectNamesType } from "../statuses/statusTypes";
+
+
+/////////////////////////////////////////////////////////////////////////////////
 //                                                                          SETUP
 
 const formNameKeys = <const> [
@@ -8,7 +14,17 @@ const formNameKeys = <const> [
   "spellsword",
   "battlemage",
   "woodsWitch",
-  "wizard"
+  "wizard",
+  "1",
+  "2",
+  "salamander",
+  "shaman",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+  "0",
 ];
 type FormNamesType = typeof formNameKeys[number]
 
@@ -21,7 +37,10 @@ const primaryEffectNames = <const> [
   "healSelf",
   "promote",
   "unnerve",
-  "doubleDamageFromBehind"
+  "reduceIncomingDamage",
+  "doubleDamageFromBehind",
+  "stepIntoKnockback",
+  "movesCasterToTarget"
 ];
 
 const terrainEffectNames = <const> [
@@ -30,25 +49,30 @@ const terrainEffectNames = <const> [
   "growth",
   "water",
   "fire",
+  "smoothsEarth",
+  "createBrush",
   "breakDestructibles"
 ];
 
-const statusEffectNames = <const> [
-  "numb",
-  "poison"
-];
-
-const statusEffects = <const> [
-  "plusMaxHealth",
-  "reduceIncomingUnnerve"
-]
-
 type PrimaryEffectNamesType = typeof primaryEffectNames[number];
 type TerrainEffectNamesType = typeof terrainEffectNames[number]
-type StatusEffectNamesType = typeof statusEffectNames[number];
-type StatusEffectsType = typeof statusEffects[number];
-type AllEffectNames = PrimaryEffectNamesType | TerrainEffectNamesType | StatusEffectNamesType | StatusEffectsType;
+type AllEffectNames = PrimaryEffectNamesType | TerrainEffectNamesType | StatusNamesType | StatusEffectNamesType;
 
+const areasOfEffectNames = <const> [
+  "single",
+  "cross",
+  "square",
+  "self",
+  "triangle",
+  "cone 1",
+  "cone 2",
+  "C",
+  "line",
+  "variable",
+  "allAlliesInRange",
+];
+
+type AreasOfEffectNamesType = typeof areasOfEffectNames[number];
 
 /////////////////////////////////////////////////////////////////////////////////
 //                                                                          TYPES
@@ -75,15 +99,20 @@ type SkillType = {
   name: string;
   skillLevel: number;
   passive?: boolean;
-  
-  range: string | number;
-  areaOfEffect: string;
-  
+
+  range?: string | number;
+  areaOfEffect: AreasOfEffectNamesType;
+
   effects?: { 
     [key in PrimaryEffectNamesType]: number | boolean | undefined;
   };
-  terrainEffects?: { [key in TerrainEffectNamesType]: number | boolean | undefined; };
-  statusEffects?: { [key in StatusEffectNamesType]: number | undefined; };
+  terrainEffects?: {
+    [key in TerrainEffectNamesType]: number | boolean | undefined;
+  };
+  statusEffects?: {
+    [key in StatusNamesType]: number | undefined;
+  };
+
   description?: string;
   tags: AllEffectNames[];
 }[]
