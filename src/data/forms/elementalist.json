@@ -1,0 +1,281 @@
+{
+  "formalName": "Elementalist",
+  "availableFromStart": false,
+  "requirements": {
+    "wizard": 7
+  },
+  "baseHP": 65,
+  "description": "Reserved with a cool temperament. This firebug knows how to ruthlessly exploit every weakness they see, including their own.",
+  "affinity": ["fire", "water"],
+  "unlockSite": "far northeast",
+  "skills": [
+    [
+      [{
+        "name": "Geyser",
+        "skillLevel": 1,
+        "range": 5,
+        "areaOfEffect": "single",
+        "effects": {
+          "damage": 40,
+          "knockback": 1
+        },
+        "terrainEffects": {
+          "fire": 4
+        },
+        "statusEffects": {
+          "geyser": 300
+        },
+        "tags": ["damage", "knockback", "fire", "water", "geyser"]
+      }],
+      [{
+        "name": "Geyser 2",
+        "skillLevel": 2,
+        "range": 5,
+        "areaOfEffect": "cross",
+        "effects": {
+          "damage": 40,
+          "knockback": 1
+        },
+        "terrainEffects": {
+          "fire": 4
+        },
+        "statusEffects": {
+          "geyser": 300
+        },
+        "tags": ["damage", "knockback", "fire", "water", "geyser"]
+      }],
+      [{
+        "name": "Geyser 3",
+        "skillLevel": 3,
+        "range": 5,
+        "areaOfEffect": "square",
+        "effects": {
+          "damage": 40,
+          "knockback": 1
+        },
+        "terrainEffects": {
+          "fire": 4
+        },
+        "statusEffects": {
+          "geyser": 300
+        },
+        "tags": ["damage", "knockback", "fire", "water", "geyser"]
+      }]
+    ],
+    [
+      [{
+        "name": "Flash",
+        "skillLevel": 1,
+        "range": 5,
+        "areaOfEffect": "allUnitsFacingTarget",
+        "effects": {
+          "damage": 5,
+          "unnerve": 1,
+          "moveCasterToTarget": true
+        },
+        "terrainEffects": {
+          "fire": 0,
+          "removeWater": 5
+        },
+        "description": "Hits all units facing target. Moves caster to target. +5 power per range.",
+        "tags": ["damage", "unnerve", "moveCasterToTarget", "fire", "removeWater"]
+      }],
+      [{
+        "name": "Flash 2",
+        "skillLevel": 2,
+        "range": 7,
+        "areaOfEffect": "allUnitsFacingTarget",
+        "effects": {
+          "damage": 5,
+          "unnerve": 1,
+          "moveCasterToTarget": true
+        },
+        "terrainEffects": {
+          "fire": 0,
+          "removeWater": 5
+        },
+        "description": "Hits all units facing target. Moves caster to target. +5 power per range.",
+        "tags": ["damage", "unnerve", "moveCasterToTarget", "fire", "removeWater"]
+      }]
+    ],
+    [
+      [{
+        "name": "Boil",
+        "skillLevel": 1,
+        "range": 5,
+        "areaOfEffect": "line",
+        "effects": {
+          "damage": 25
+        },
+        "terrainEffects": {
+          "removeWater": 1
+        },
+        "description": "+3 power per water at target",
+        "tags": ["damage", "removeWater"]
+      }],
+      [{
+        "name": "Boil 2",
+        "skillLevel": 2,
+        "range": 3,
+        "areaOfEffect": "line",
+        "effects": {
+          "damage": 25
+        },
+        "terrainEffects": {
+          "removeWater": 1
+        },
+        "description": "Spreads across water. +3 power per water at target",
+        "tags": ["damage", "removeWater"]
+      }],
+      [{
+        "name": "Boil 3",
+        "skillLevel": 3,
+        "range": 3,
+        "areaOfEffect": "line",
+        "effects": {
+          "damage": 25
+        },
+        "terrainEffects": {
+          "removeWater": 1
+        },
+        "description": "Spreads across water. +5 power per water at target",
+        "tags": ["damage", "removeWater"]
+      }]
+    ],
+    [
+      [{
+        "name": "Vortex",
+        "skillLevel": 1,
+        "range": 5,
+        "areaOfEffect": "single",
+        "effects": {
+          "damage": 40,
+          "pull": 1
+        },
+        "terrainEffects": {
+          "fire": 4
+        },
+        "statusEffects": {
+          "vortex": 300
+        },
+        "tags": ["damage", "pull", "fire", "vortex"]
+      }],
+      [{
+        "name": "Vortex 2",
+        "skillLevel": 2,
+        "range": 5,
+        "areaOfEffect": "cross",
+        "effects": {
+          "damage": 40,
+          "pull": 1
+        },
+        "terrainEffects": {
+          "fire": 4
+        },
+        "statusEffects": {
+          "vortex": 300
+        },
+        "tags": ["damage", "pull", "fire", "vortex"]
+      }],
+      [{
+        "name": "Vortex 3",
+        "skillLevel": 3,
+        "range": 5,
+        "areaOfEffect": "square",
+        "effects": {
+          "damage": 40,
+          "pull": 1
+        },
+        "terrainEffects": {
+          "fire": 4
+        },
+        "statusEffects": {
+          "vortex": 300
+        },
+        "tags": ["damage", "pull", "fire", "vortex"]
+      }]
+    ],
+    [
+      [{
+        "name": "Incinerate",
+        "skillLevel": 1,
+        "range": 5,
+        "areaOfEffect": "line",
+        "effects": {
+          "damage": 25
+        },
+        "terrainEffects": {
+          "fire": 9
+        },
+        "description": "+5 power per grass at target.",
+        "tags": ["damage", "fire"]
+      }],
+      [{
+        "name": "Incinerate 2",
+        "skillLevel": 2,
+        "range": 5,
+        "areaOfEffect": "lineToCross",
+        "effects": {
+          "damage": 25
+        },
+        "terrainEffects": {
+          "fire": 9
+        },
+        "description": "+5 power per grass at target.",
+        "tags": ["damage", "fire"]
+      }],
+      [{
+        "name": "Incinerate 3",
+        "skillLevel": 3,
+        "range": 5,
+        "areaOfEffect": "lineToCross",
+        "effects": {
+          "damage": 25
+        },
+        "terrainEffects": {
+          "fire": 9
+        },
+        "description": "+5 power per grass at target.",
+        "tags": ["damage", "fire"]
+      }]
+    ],
+    [
+      [{
+        "name": "Immolate",
+        "skillLevel": 1,
+        "range": 5,
+        "areaOfEffect": "single",
+        "effects": {
+          "damage": 20
+        },
+        "terrainEffects": {
+          "fire": 9
+        },
+        "description": "Converts caster's health to power.",
+        "tags": ["damage", "fire"]
+      }],
+      [{
+        "name": "Immolate 2",
+        "skillLevel": 2,
+        "range": 5,
+        "areaOfEffect": "cross",
+        "effects": {
+          "damage": 20
+        },
+        "terrainEffects": {
+          "fire": 9
+        },
+        "description": "Converts caster's health to power.",
+        "tags": ["damage", "fire"]
+      }]
+    ],
+    [
+      [{
+        "name": "Affinity",
+        "skillLevel": 1,
+        "description": "Access an additional known ability from another breed, constrained by this breed's elemental affinities.",
+        "tags": ["affinity"]
+      }]
+    ]
+  ]
+}

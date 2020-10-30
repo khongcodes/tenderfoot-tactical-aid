@@ -24,7 +24,7 @@ const formNameKeys = <const> [
   "6",
   "druid",
   "8",
-  "9",
+  "elementalist",
   "0",
 ];
 export type FormNamesType = typeof formNameKeys[number]
@@ -50,10 +50,12 @@ const terrainEffectNames = <const> [
   "earthDown",
   "growth",
   "water",
+  "removeWater",
   "fire",
   "smoothsEarth",
   "createBrush",
-  "createStalagmite",
+  "createStalagmite",     // battlemage
+  "createGeyser",         // elementalist
   "breakDestructibles"
 ];
 
@@ -65,16 +67,17 @@ const areasOfEffectNames = <const> [
   "single",
   "cross",
   "square",
-  "diamond",      // archer/great salvo 2, wizard/whirlwind 2
+  "diamond",        // archer/great salvo 2, wizard/whirlwind 2
   "self",
   "triangle",
   "cone 1",
-  "cone 2",       // battlemage/surge 3
-  "C",            // battlemage/thirst 3
+  "cone 2",         // battlemage/surge 3
+  "C",              // battlemage/thirst 3
   "line",
-  "lineThrough",  // archer/lance
-  "lineToCross",  // archer/frag lance
-  "row",          // druid/hedge
+  "lineThrough",    // archer/lance
+  "lineToCross",    // archer/frag lance
+  "lineToSquare",   // elementalist/incinerate 3
+  "row",            // druid/hedge
   "variable",
   "allAlliesInRange",
   "allUnitsFacingTarget"

@@ -9,7 +9,8 @@ const statusNames = <const> [
   "prideful 2",
   "inspired",
   "cocoon",
-  "regen"
+  "regen",
+  "geyser"
 ];
 
 const statusEffectNames = <const> [
@@ -19,6 +20,9 @@ const statusEffectNames = <const> [
   "healOverTime",
   "immuneToKnockback",
   "immuneToPull",
+  "createWater",
+  "removeWater",
+  "difficultTerrain"
 ];
 
 export type StatusNamesType = typeof statusNames[number];
@@ -31,7 +35,7 @@ type StatusEffectType = {
 };
 
 type StatusType = {
-  type: "buff" | "debuff";
+  type: "buff" | "debuff" | "terrain";
   effects: StatusEffectType[];
   forms: FormNamesType
 };
