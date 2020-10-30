@@ -42,7 +42,20 @@
         "perTicks": 5
       }
     ],
-    "forms": ["archer", "druid"]
+    "forms": ["archer", "druid", "shaman"]
+  },
+  "bewitched": {
+    "type": "debuff",
+    "effects": [
+      {
+        "tag": "minusPower",
+        "number": 10
+      },
+      {
+        "tag": "fixationOnCaster"
+      }
+    ],
+    "forms": ["shaman"]
   },
   "prideful": {
     "type": "buff",
@@ -105,7 +118,17 @@
         "perTicks": 8
       }
     ],
-    "forms": ["druid"]
+    "forms": ["druid", "shaman"]
+  },
+  "thorn": {
+    "type": "buff",
+    "effects": [
+      {
+        "tag": "reflectDamage",
+        "number": 25
+      }
+    ],
+    "forms": ["shaman"]
   },
   "geyser": {
     "type": "terrain",

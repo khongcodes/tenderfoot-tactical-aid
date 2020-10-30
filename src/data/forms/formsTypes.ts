@@ -49,6 +49,7 @@ const terrainEffectNames = <const> [
   "earthUp",
   "earthDown",
   "growth",
+  "removeLife",
   "water",
   "removeWater",
   "fire",
@@ -56,6 +57,7 @@ const terrainEffectNames = <const> [
   "createBrush",
   "createStalagmite",     // battlemage
   "createGeyser",         // elementalist
+  "createVortex",         // elementalist
   "breakDestructibles"
 ];
 

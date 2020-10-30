@@ -1,0 +1,252 @@
+{
+  "formalName": "Shaman",
+  "availableFromStart": false,
+  "requirements": {
+    "battlemage": 6
+  },
+  "baseHP": 120,
+  "description": "A disciplined healer who can control earth and plant. Can take a hit and deal one out, too.",
+  "unlockSite": "north-of-west",
+  "affinity": ["earth", "life"],
+  "skills": [
+    [
+      [{
+        "name": "Plow",
+        "skillLevel": 1,
+        "range": 1,
+        "areaOfEffect": "C",
+        "effects": {
+          "damage": 30
+        },
+        "terrainEffects": {
+          "growth": 2,
+          "earthDown": 1
+        },
+        "tags": ["damage", "growth", "earthDown"]
+      }],
+      [{
+        "name": "Plow 2",
+        "skillLevel": 2,
+        "range": 2,
+        "areaOfEffect": "square",
+        "effects": {
+          "damage": 35
+        },
+        "terrainEffects": {
+          "growth": 2,
+          "earthDown": 1
+        },
+        "tags": ["damage", "growth", "earthDown"]
+      }],
+      [{
+        "name": "Plow 3",
+        "skillLevel": 3,
+        "range": 2,
+        "areaOfEffect": "square",
+        "effects": {
+          "damage": 45
+        },
+        "terrainEffects": {
+          "growth": 2,
+          "earthDown": 2
+        },
+        "tags": ["damage", "growth", "earthDown"]
+      }]
+    ],
+    [
+      [{
+        "name": "Gather",
+        "skillLevel": 1,
+        "range": "1-2",
+        "areaOfEffect": "line",
+        "effects": {
+          "damage": 30,
+          "pull": 1
+        },
+        "tags": ["damage", "pull"]
+      }],
+      [{
+        "name": "Gather 2",
+        "skillLevel": 2,
+        "range": "1-3",
+        "areaOfEffect": "line",
+        "effects": {
+          "damage": 40,
+          "pull": 1
+        },
+        "tags": ["damage", "pull"]
+      }],
+      [{
+        "name": "Gather 3",
+        "skillLevel": 3,
+        "range": "1-3",
+        "areaOfEffect": "line",
+        "effects": {
+          "damage": 50,
+          "pull": 2
+        },
+        "tags": ["damage", "pull"]
+      }]
+    ],
+    [
+      [{
+        "name": "Thicket",
+        "skillLevel": 1,
+        "range": 2,
+        "areaOfEffect": "cross",
+        "effects": {
+          "damage": 10
+        },
+        "terrainEffects": {
+          "growth": 9,
+          "createBrush": true
+        },
+        "tags": ["damage", "growth", "createBrush"]
+      }],
+      [{
+        "name": "Thicket 2",
+        "skillLevel": 2,
+        "range": 3,
+        "areaOfEffect": "cross",
+        "effects": {
+          "damage": 15
+        },
+        "terrainEffects": {
+          "growth": 9,
+          "createBrush": true
+        },
+        "tags": ["damage", "growth", "createBrush"]
+      }],
+      [{
+        "name": "Thicket 3",
+        "skillLevel": 3,
+        "range": 4,
+        "areaOfEffect": "cross",
+        "effects": {
+          "damage": 20
+        },
+        "terrainEffects": {
+          "growth": 9,
+          "createBrush": true
+        },
+        "tags": ["damage", "growth", "createBrush"]
+      }]
+    ],
+    [
+      [{
+        "name": "Thrive",
+        "skillLevel": 1,
+        "range": 1,
+        "areaOfEffect": "single",
+        "effects": {
+          "heal": 25
+        },
+        "terrainEffects": {
+          "growth": 9
+        },
+        "statusEffects": {
+          "regen": 480
+        },
+        "tags": ["heal", "growth", "regen"]
+      }],
+      [{
+        "name": "Thrive 2",
+        "skillLevel": 2,
+        "range": 1,
+        "areaOfEffect": "single",
+        "effects": {
+          "heal": 30
+        },
+        "terrainEffects": {
+          "growth": 9
+        },
+        "statusEffects": {
+          "regen": 480,
+          "thorn": 720
+        },
+        "tags": ["heal", "growth", "regen", "thorn"]
+      }],
+      [{
+        "name": "Thrive 3",
+        "skillLevel": 3,
+        "range": 1,
+        "areaOfEffect": "single",
+        "effects": {
+          "heal": 50
+        },
+        "terrainEffects": {
+          "growth": 9
+        },
+        "statusEffects": {
+          "regen": 480,
+          "thorn": 720
+        },
+        "tags": ["heal", "growth", "regen", "thorn"]
+      }]
+    ],
+    [
+      [{
+        "name": "Bewitch",
+        "skillLevel": 1,
+        "range": "1-2",
+        "areaOfEffect": "single",
+        "terrainEffects": {
+          "removeLife": 10
+        },
+        "statusEffects": {
+          "bewitched": 1200
+        },
+        "tags": ["removeLife", "bewitched"]
+      }],
+      [{
+        "name": "Bewitch 2",
+        "skillLevel": 2,
+        "range": "1-2",
+        "areaOfEffect": "cross",
+        "terrainEffects": {
+          "removeLife": 10
+        },
+        "statusEffects": {
+          "bewitched": 1200
+        },
+        "tags": ["removeLife", "bewitched"]
+      }],
+      [{
+        "name": "Bewitch 3",
+        "skillLevel": 3,
+        "range": "1-2",
+        "areaOfEffect": "cross",
+        "terrainEffects": {
+          "removeLife": 10
+        },
+        "statusEffects": {
+          "bewitched": 1200,
+          "poison": 200
+        },
+        "tags": ["removeLife", "bewitched", "poison"]
+      }]
+    ],
+    [
+      [{
+        "name": "Grapple",
+        "skillLevel": 1,
+        "range": "1-1",
+        "areaOfEffect": "single",
+        "effects": {
+          "damage": 20,
+          "moveCasterToTarget": true
+        },
+        "description": "Swaps positions with target",
+        "tags": ["damage", "moveCasterToTarget"]
+      }]
+    ],
+    [
+      [{
+        "name": "Affinity",
+        "skillLevel": 1,
+        "description": "Access an additional known ability from another breed, constrained by this breed's elemental affinities.",
+        "tags": ["affinity"]
+      }]
+    ]
+  ]
+}

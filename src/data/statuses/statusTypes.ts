@@ -5,12 +5,15 @@ const statusNames = <const> [
   "slow",
   "slow 2",
   "poison",
+  "bewitched",
   "prideful",
   "prideful 2",
   "inspired",
   "cocoon",
   "regen",
-  "geyser"
+  "thorn",
+  "geyser",
+  "vortex"
 ];
 
 const statusEffectNames = <const> [
@@ -22,7 +25,10 @@ const statusEffectNames = <const> [
   "immuneToPull",
   "createWater",
   "removeWater",
-  "difficultTerrain"
+  "difficultTerrain",
+  "reflectDamage",
+  "minusPower",
+  "fixationOnCaster"
 ];
 
 export type StatusNamesType = typeof statusNames[number];

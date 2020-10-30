@@ -20,12 +20,10 @@
           "knockback": 1
         },
         "terrainEffects": {
-          "fire": 4
+          "fire": 4,
+          "createGeyser": 300
         },
-        "statusEffects": {
-          "geyser": 300
-        },
-        "tags": ["damage", "knockback", "fire", "water", "geyser"]
+        "tags": ["damage", "knockback", "fire", "water", "createGeyser"]
       }],
       [{
         "name": "Geyser 2",
@@ -37,12 +35,10 @@
           "knockback": 1
         },
         "terrainEffects": {
-          "fire": 4
+          "fire": 4,
+          "createGeyser": 300
         },
-        "statusEffects": {
-          "geyser": 300
-        },
-        "tags": ["damage", "knockback", "fire", "water", "geyser"]
+        "tags": ["damage", "knockback", "fire", "water", "createGeyser"]
       }],
       [{
         "name": "Geyser 3",
@@ -54,12 +50,10 @@
           "knockback": 1
         },
         "terrainEffects": {
-          "fire": 4
+          "fire": 4,
+          "createGeyser": 300
         },
-        "statusEffects": {
-          "geyser": 300
-        },
-        "tags": ["damage", "knockback", "fire", "water", "geyser"]
+        "tags": ["damage", "knockback", "fire", "water", "createGeyser"]
       }]
     ],
     [
@@ -153,12 +147,10 @@
           "pull": 1
         },
         "terrainEffects": {
-          "fire": 4
+          "fire": 4,
+          "createVortex": 300
         },
-        "statusEffects": {
-          "vortex": 300
-        },
-        "tags": ["damage", "pull", "fire", "vortex"]
+        "tags": ["damage", "pull", "fire", "createVortex"]
       }],
       [{
         "name": "Vortex 2",
@@ -170,12 +162,10 @@
           "pull": 1
         },
         "terrainEffects": {
-          "fire": 4
+          "fire": 4,
+          "createVortex": 300
         },
-        "statusEffects": {
-          "vortex": 300
-        },
-        "tags": ["damage", "pull", "fire", "vortex"]
+        "tags": ["damage", "pull", "fire", "createVortex"]
       }],
       [{
         "name": "Vortex 3",
@@ -187,12 +177,10 @@
           "pull": 1
         },
         "terrainEffects": {
-          "fire": 4
+          "fire": 4,
+          "createVortex": 300
         },
-        "statusEffects": {
-          "vortex": 300
-        },
-        "tags": ["damage", "pull", "fire", "vortex"]
+        "tags": ["damage", "pull", "fire", "createVortex"]
       }]
     ],
     [

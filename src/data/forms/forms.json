@@ -7,6 +7,7 @@
     "archer",
     "woodsWitch",
     "wizard",
+    "shaman",
     "druid",
     "elementalist"
   ],
@@ -33,17 +34,6 @@
     "baseHP": 95,
     "description": "Semi-aquatic. Thrives in marshes. Slimy and disease-ridden, but with a keen affinity for the healing arts.",
     "unlockSite": "west",
-    "skills": []
-  },
-  "shaman": {
-    "formalName": "Shaman",
-    "availableFromStart": false,
-    "requirements": {
-      "battlemage": 6
-    },
-    "baseHP": 120,
-    "description": "A disciplined healer who can control earth and plant. Can take a hit and deal one out, too.",
-    "unlockSite": "north-of-west",
     "skills": []
   },
   "5": {},
