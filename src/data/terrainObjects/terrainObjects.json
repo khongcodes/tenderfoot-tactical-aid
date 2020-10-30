@@ -1,0 +1,40 @@
+{
+  "brush": {
+    "formalName": "Brush",
+    "impassable": false,
+    "difficultTerrain": true,
+    "destructible": true,
+    "forms": []
+  },
+  "stalagmite": {
+    "formalName": "Stalagmite",
+    "impassable": true,
+    "destructible": true,
+    "forms": ["battlemage"]
+  },
+  "geyser": {
+    "formalName": "Geyser",
+    "effects": [
+      {
+        "tag": "createWater",
+        "number": 1,
+        "perTicks": 5
+      },
+      {
+        "tag": "damage",
+        "number": 1,
+        "perTicks": 5
+      }
+    ],
+    "forms": ["elementalist"]
+  },
+  "vortex": {
+    "formalName": "Vortex",
+    "effects": [
+      {
+        "tag": "removeWater"
+      }
+    ],
+    "forms": ["elementalist"]
+  }
+}

@@ -1,4 +1,4 @@
-import { FormNamesType } from "../forms/formsTypes"
+import { FormNamesType } from "../forms/formTypes"
 
 const statusNames = <const> [
   "numb",
@@ -11,9 +11,7 @@ const statusNames = <const> [
   "inspired",
   "cocoon",
   "regen",
-  "thorn",
-  "geyser",
-  "vortex"
+  "thorn"
 ];
 
 const statusEffectNames = <const> [
@@ -24,8 +22,6 @@ const statusEffectNames = <const> [
   "immuneToKnockback",
   "immuneToPull",
   "createWater",
-  "removeWater",
-  "difficultTerrain",
   "reflectDamage",
   "minusPower",
   "fixationOnCaster"
@@ -43,7 +39,7 @@ type StatusEffectType = {
 type StatusType = {
   type: "buff" | "debuff" | "terrain";
   effects: StatusEffectType[];
-  forms: FormNamesType
+  forms: FormNamesType[];
 };
 
 export type StatusesType = { [key in StatusNamesType]: StatusType };

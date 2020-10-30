@@ -129,33 +129,5 @@
       }
     ],
     "forms": ["shaman"]
-  },
-  "geyser": {
-    "type": "terrain",
-    "effects": [
-      {
-        "tag": "createWater",
-        "number": 1,
-        "perTicks": 5
-      },
-      {
-        "tag": "damage",
-        "number": 1,
-        "perTicks": 5
-      }
-    ],
-    "forms": ["elementalist"]
-  },
-  "vortex": {
-    "type": "terrain",
-    "effects": [
-      {
-        "tag": "removeWater"
-      },
-      {
-        "tag": "difficultTerrain"
-      }
-    ],
-    "forms": ["elementalist"]
   }
 }
