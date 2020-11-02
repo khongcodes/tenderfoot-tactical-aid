@@ -6,6 +6,32 @@
     "destructible": true,
     "forms": []
   },
+  "frailtyImbuedBrush": {
+    "formalName": "Brush",
+    "impassable": false,
+    "difficultTerrain": true,
+    "destructible": true,
+    "effects": [
+      {
+        "tag": "minusPower",
+        "number": 60
+      }
+    ],
+    "forms": ["bogWitch"]
+  },
+  "vigorImbuedBrush": {
+    "formalName": "Brush",
+    "impassable": false,
+    "difficultTerrain": true,
+    "destructible": true,
+    "effects": [
+      {
+        "tag": "plusPower",
+        "number": 40
+      }
+    ],
+    "forms": ["bogWitch"]
+  },
   "stalagmite": {
     "formalName": "Stalagmite",
     "impassable": true,
@@ -36,5 +62,14 @@
       }
     ],
     "forms": ["elementalist"]
+  },
+  "ice": {
+    "formalName": "Ice",
+    "effects": [
+      {
+        "tag": "freeMovementAcrossWater"
+      }
+    ],
+    "forms": ["spellsword"]
   }
 }

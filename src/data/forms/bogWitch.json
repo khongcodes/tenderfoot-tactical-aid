@@ -1,0 +1,213 @@
+{
+  "formalName": "Bog Witch",
+  "availableFromStart": false,
+  "requirements": {
+    "woodsWitch": 7
+  },
+  "baseHP": 65,
+  "description": "A naturally cantankerous breed with control over water and life. Respectable ranged damage with some healing and support capabilities.",
+  "affinity": ["water", "life"],
+  "unlockSite": "near northeast",
+  "skills": [
+    [
+      [{
+        "name": "Sicken",
+        "skillLevel": 1,
+        "range": 4,
+        "areaOfEffect": "single",
+        "terrainEffects": {
+          "removeLife": 10,
+          "water": 2
+        },
+        "statusEffects": {
+          "sickened": 200
+        },
+        "tags": ["removeLife", "water", "sickened"]
+      }],
+      [{
+        "name": "Sicken 2",
+        "skillLevel": 2,
+        "range": 4,
+        "areaOfEffect": "single",
+        "terrainEffects": {
+          "removeLife": 10,
+          "water": 2
+        },
+        "statusEffects": {
+          "sickened": 200,
+          "poison": 200
+        },
+        "tags": ["removeLife", "water", "sickened", "poison"]
+      }],
+      [{
+        "name": "Fertilize",
+        "skillLevel": 3,
+        "range": 4,
+        "areaOfEffect": "single",
+        "terrainEffects": {
+          "removeLife": 10,
+          "water": 2
+        },
+        "statusEffects": {
+          "sickened": 200,
+          "poison": 200,
+          "fecund": 200
+        },
+        "tags": ["removeLife", "water", "sickened", "poison", "fecund"]
+      }]
+    ],
+    [
+      [{
+        "name": "Sleet",
+        "skillLevel": 1,
+        "range": 0,
+        "areaOfEffect": "entireBattlefield",
+        "effects": {
+          "heal": 10
+        },
+        "terrainEffects": {
+          "water": 1
+        },
+        "tags": ["heal", "water", "entireBattlefield"]
+      }],
+      [{
+        "name": "Sleet 2",
+        "skillLevel": 2,
+        "range": 0,
+        "areaOfEffect": "entireBattlefield",
+        "effects": {
+          "heal": 25
+        },
+        "terrainEffects": {
+          "water": 1
+        },
+        "tags": ["heal", "water", "entireBattlefield"]
+      }]
+    ],
+    [
+      [{
+        "name": "Imbue Frailty",
+        "skillLevel": 1,
+        "range": 5,
+        "areaOfEffect": "lineToSquare",
+        "terrainEffects": {
+          "imbueBrushFrailty": true
+        },
+        "description": "Applies 'Frailty' to hit ground: Brush imbued with a curse of frailty, reducing the power of any standing within it by 60.",
+        "tags": ["imbueBrushFrailty"]
+      }],
+      [{
+        "name": "Imbue Frailty 2",
+        "skillLevel": 2,
+        "range": 0,
+        "areaOfEffect": "entireBattlefield",
+        "terrainEffects": {
+          "imbueBrushFrailty": true
+        },
+        "description": "Hits entire battlefield. Applies 'Frailty' to hit ground: Brush imbued with a curse of frailty, reducing the power of any standing within it by 60.",
+        "tags": ["imbueBrushFrailty", "entireBattlefield"]
+      }]
+    ],
+    [
+      [{
+        "name": "Germinate",
+        "skillLevel": 1,
+        "range": 0,
+        "areaOfEffect": "entireBattlefield",
+        "terrainEffects": {
+          "growth": 9
+        },
+        "statusEffects": {
+          "sporeCloud": 120
+        },
+        "description": "Hits entire battlefield. Applies 'Spore Cloud' globally for 120 ticks: limits the range of all actions to 2.",
+        "tags": ["growth", "sporeCloud", "entireBattlefield"]
+      }]
+    ],
+    [
+      [{
+        "name": "Imbue Vigor",
+        "skillLevel": 1,
+        "range": 5,
+        "areaOfEffect": "lineToSquare",
+        "terrainEffects": {
+          "imbueBrushVigor": true
+        },
+        "description": "Applies 'Vigor' to hit ground: Brush imbued with vigor, increasing the power of any standing within it by 40.",
+        "tags": ["imbueBrushVigor"]
+      }],
+      [{
+        "name": "Imbue Vigor 2",
+        "skillLevel": 2,
+        "range": 0,
+        "areaOfEffect": "entireBattlefield",
+        "terrainEffects": {
+          "imbueBrushVigor": true
+        },
+        "description": "Hits entire battlefield. Applies 'Vigor' to hit ground: Brush imbued with vigor, increasing the power of any standing within it by 40.",
+        "tags": ["imbueBrushVigor"]
+      }]
+    ],
+    [
+      [{
+        "name": "Nostrum",
+        "skillLevel": 1,
+        "range": 4,
+        "areaOfEffect": "single",
+        "effects": {
+          "heal": 70,
+          "unnerve": 1
+        },
+        "terrainEffects": {
+          "growth": 9,
+          "water": 2
+        },
+        "tags": ["heal", "unnerve", "growth", "water"]
+      }],
+      [{
+        "name": "Nostrum 2",
+        "skillLevel": 2,
+        "range": 4,
+        "areaOfEffect": "single",
+        "effects": {
+          "heal": 70,
+          "unnerve": 1
+        },
+        "terrainEffects": {
+          "growth": 9,
+          "water": 2
+        },
+        "statusEffects": {
+          "vampiric": 480
+        },
+        "tags": ["heal", "unnerve", "growth", "water", "vampiric"]
+      }],
+      [{
+        "name": "Nostrum",
+        "skillLevel": 3,
+        "range": 4,
+        "areaOfEffect": "cross",
+        "effects": {
+          "heal": 70,
+          "unnerve": 1
+        },
+        "terrainEffects": {
+          "growth": 9,
+          "water": 2
+        },
+        "statusEffects": {
+          "vampiric": 480
+        },
+        "tags": ["heal", "unnerve", "growth", "water", "vampiric"]
+      }]
+    ],
+    [
+      [{
+        "name": "Affinity",
+        "skillLevel": 1,
+        "description": "Access an additional known ability from another breed, constrained by this breed's elemental affinities.",
+        "tags": ["affinity"]
+      }]
+    ]
+  ]
+}

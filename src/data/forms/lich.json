@@ -1,0 +1,237 @@
+{
+  "formalName": "Lich",
+  "availableFromStart": false,
+  "requirements": {
+    "spellsword": 6
+  },
+  "baseHP": 90,
+  "description": "Small, fast, and sharp, but rather easily wounded. Nasty little things.",
+  "affinity": ["fire", "water"],
+  "unlockSite": "near north",
+  "skills": [
+    [
+      [{
+        "name": "Shatter",
+        "skillLevel": 1,
+        "range": 0,
+        "areaOfEffect": "squareSurroundingSelf",
+        "effects": {
+          "damage": 35,
+          "knockback": 1
+        },
+        "terrainEffects": {
+          "water": 5,
+          "breakDestructibles": true
+        },
+        "tags": ["damage", "knockback", "water", "breakDestructibles"]
+      }],
+      [{
+        "name": "Shatter 2",
+        "skillLevel": 2,
+        "range": 0,
+        "areaOfEffect": "squareSurroundingSelf",
+        "effects": {
+          "damage": 45,
+          "knockback": 2
+        },
+        "terrainEffects": {
+          "water": 10,
+          "breakDestructibles": true
+        },
+        "tags": ["damage", "knockback", "water", "breakDestructibles"]
+      }],
+      [{
+        "name": "Shatter 3",
+        "skillLevel": 3,
+        "range": 0,
+        "areaOfEffect": "squareSurroundingSelf",
+        "effects": {
+          "damage": 55,
+          "knockback": 1
+        },
+        "terrainEffects": {
+          "water": 15,
+          "breakDestructibles": true
+        },
+        "tags": ["damage", "knockback", "water", "breakDestructibles"]
+      }]
+    ],
+    [
+      [{
+        "name": "Spit Oil",
+        "skillLevel": 1,
+        "range": "1-3",
+        "areaOfEffect": "single",
+        "effects": {
+          "damage": 10,
+          "unnerve": 3
+        },
+        "statusEffects": {
+          "oil": 360
+        },
+        "tags": ["damage", "unnerve", "oil"]
+      }],
+      [{
+        "name": "Spit Boil",
+        "skillLevel": 2,
+        "range": "1-3",
+        "areaOfEffect": "single",
+        "effects": {
+          "damage": 15,
+          "unnerve": 3
+        },
+        "statusEffects": {
+          "boilingOil": 360
+        },
+        "tags": ["damage", "unnerve", "boilingOil"]
+      }]
+    ],
+    [
+      [{
+        "name": "Dragonbreath",
+        "skillLevel": 1,
+        "range": "1-1",
+        "areaOfEffect": "cone 1",
+        "effects": {
+          "damage": 40
+        },
+        "terrainEffects": {
+          "fire": 9
+        },
+        "tags": ["damage", "fire"]
+      }],
+      [{
+        "name": "Dragonbreath 2",
+        "skillLevel": 2,
+        "range": "1-1",
+        "areaOfEffect": "cone 1",
+        "effects": {
+          "damage": 50
+        },
+        "terrainEffects": {
+          "fire": 9
+        },
+        "tags": ["damage", "fire"]
+      }],
+      [{
+        "name": "Dragonbreath 3",
+        "skillLevel": 3,
+        "range": "1-1",
+        "areaOfEffect": "cone 2",
+        "effects": {
+          "damage": 40
+        },
+        "terrainEffects": {
+          "fire": 9
+        },
+        "tags": ["damage", "fire"]
+      }]
+    ],
+    [
+      [{
+        "name": "Static Jump",
+        "skillLevel": 1,
+        "range": "5",
+        "areaOfEffect": "cross",
+        "effects": {
+          "damage": 5,
+          "moveCasterToTarget": true
+        },
+        "terrainEffects": {
+          "fire": 2,
+          "spreadsAcrossWater": true
+        },
+        "tags": ["damage", "moveCasterToTarget", "fire", "spreadsAcrossWater"]
+      }],
+      [{
+        "name": "Bolt",
+        "skillLevel": 2,
+        "range": "5",
+        "areaOfEffect": "square",
+        "effects": {
+          "damage": 40,
+          "moveCasterToTarget": true
+        },
+        "terrainEffects": {
+          "fire": 4,
+          "spreadsAcrossWater": true
+        },
+        "tags": ["damage", "moveCasterToTarget", "fire", "spreadsAcrossWater"]
+      }]
+    ],
+    [
+      [{
+        "name": "Leach",
+        "skillLevel": 1,
+        "range": 2,
+        "areaOfEffect": "single",
+        "effects": {
+          "damage": 40,
+          "healSelfForDamageDone": true
+        },
+        "terrainEffects": {
+          "removeWater": 5
+        },
+        "tags": ["damage", "healSelfForDamageDone", "removeWater"]
+      }],
+      [{
+        "name": "Leach 2",
+        "skillLevel": 2,
+        "range": 2,
+        "areaOfEffect": "cross",
+        "effects": {
+          "damage": 30,
+          "healSelfForDamageDone": true
+        },
+        "terrainEffects": {
+          "removeWater": 5
+        },
+        "tags": ["damage", "healSelfForDamageDone", "removeWater"]
+      }],
+      [{
+        "name": "Leach 3",
+        "skillLevel": 3,
+        "range": 3,
+        "areaOfEffect": "single",
+        "effects": {
+          "damage": 40,
+          "healSelfForDamageDone": true
+        },
+        "terrainEffects": {
+          "removeWater": 5
+        },
+        "tags": ["damage", "healSelfForDamageDone", "removeWater"]
+      }]
+    ],
+    [
+      [{
+        "name": "Nimble",
+        "skillLevel": 1,
+        "passive": true,
+        "areaOfEffect": "self",
+        "effects": {
+          "plusMoveRange": 1
+        },
+        "tags": ["passive", "plusMoveRange"]
+      }],
+      [{
+        "name": "Nimble 2",
+        "skillLevel": 2,
+        "passive": true,
+        "areaOfEffect": "self",
+        "effects": {
+          "plusMoveRange": 2
+        },
+        "tags": ["passive", "plusMoveRange"]
+      }]
+    ],
+    [
+      [{
+        "name": "Affinity",
+        "skillLevel": 1,
+        "description": "Access an additional known ability from another breed, constrained by this breed's elemental affinities.",
+        "tags": ["affinity"]
+      }]
+    ]
+  ]
+}

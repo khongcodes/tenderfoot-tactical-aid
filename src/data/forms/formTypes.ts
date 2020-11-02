@@ -16,7 +16,7 @@ const formNameKeys = <const> [
   "archer",
   "woodsWitch",
   "wizard",
-  "1",
+  "lich",
   "2",
   "salamander",
   "shaman",
@@ -25,7 +25,7 @@ const formNameKeys = <const> [
   "druid",
   "8",
   "elementalist",
-  "0",
+  "bogWitch",
 ];
 export type FormNamesType = typeof formNameKeys[number]
 
@@ -35,14 +35,17 @@ const primaryEffectNames = <const> [
   "heal",
   "knockback",
   "pull",
-  "healSelf",
+  "healSelfForDamageDone",
   "promote",
   "unnerve",
+  "reduceIncomingUnnerve",
   "reduceIncomingDamage",
   "doubleDamageFromBehind",
   "stepIntoKnockback",
   "moveCasterToTarget",
-  "removeAllStatusEffects"
+  "removeAllStatusEffects",
+  "rangeVariableDamage",
+  "plusMoveRange"
 ];
 
 const terrainEffectNames = <const> [
@@ -55,10 +58,17 @@ const terrainEffectNames = <const> [
   "fire",
   "smoothsEarth",
   "createBrush",
+  "imbueBrushFrailty",
+  "imbueBrushVigor",
+  "chaoticallyModifyTerrain",
   "createStalagmite",     // battlemage
   "createGeyser",         // elementalist
   "createVortex",         // elementalist
-  "breakDestructibles"
+  "createIce",            // spellsword
+  "breakDestructibles",
+  "spreadsAcrossWater",
+  "waterVariableDamage",
+  "grassVariableDamage",
 ];
 
 type PrimaryEffectNamesType = typeof primaryEffectNames[number];
@@ -67,14 +77,17 @@ type AllEffectNames = PrimaryEffectNamesType | TerrainEffectNamesType | StatusNa
 
 const areasOfEffectNames = <const> [
   "single",
+  "pierce 1",       // spellsword/sandblast
   "cross",
   "square",
   "diamond",        // archer/great salvo 2, wizard/whirlwind 2
   "self",
+  "squareSurroundingSelf",
   "triangle",
   "cone 1",
   "cone 2",         // battlemage/surge 3
   "C",              // battlemage/thirst 3
+  "snowflake C",    // spellsword/nightmare
   "line",
   "lineThrough",    // archer/lance
   "lineToCross",    // archer/frag lance
@@ -82,7 +95,8 @@ const areasOfEffectNames = <const> [
   "row",            // druid/hedge
   "variable",
   "allAlliesInRange",
-  "allUnitsFacingTarget"
+  "allUnitsFacingTarget",
+  "entireBattlefield"
 ];
 
 type AreasOfEffectNamesType = typeof areasOfEffectNames[number];

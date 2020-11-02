@@ -3,26 +3,17 @@
     "goblin",
     "knight",
     "polearm",
+    "spellsword",
     "battlemage",
     "archer",
     "woodsWitch",
     "wizard",
+    "lich",
     "shaman",
     "druid",
-    "elementalist"
+    "elementalist",
+    "bogWitch"
   ],
-  "spellsword": {
-    "formalName": "Spellsword",
-    "availableFromStart": true,
-    "requirements": {
-      "knight": 4,
-      "wizard": 3
-    },
-    "baseHP": 100,
-    "description": "Hot-blooded and decisive. A natural fighter with a broad affinity for the elements. This breed has a tendency to bite off more than they can chew.",
-    "skills": []
-  },
-  "1": {},
   "2": {},
   "salamander": {
     "formalName": "Salamander",
@@ -38,6 +29,5 @@
   },
   "5": {},
   "6": {},
-  "8": {},
-  "0": {}
+  "8": {}
 }

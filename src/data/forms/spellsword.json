@@ -1,0 +1,169 @@
+{
+  "formalName": "Spellsword",
+  "availableFromStart": true,
+  "requirements": {
+    "knight": 4,
+    "wizard": 3
+  },
+  "baseHP": 100,
+  "description": "Hot-blooded and decisive. A natural fighter with a broad affinity for the elements. This breed has a tendency to bite off more than they can chew.",
+  "affinity": ["fire", "water", "earth"],
+  "skills": [
+    [
+      [{
+        "name": "Breaker",
+        "skillLevel": 1,
+        "range": "1-3",
+        "areaOfEffect": "lineToCross",
+        "effects": {
+          "damage": 50,
+          "moveCasterToTarget": true
+        },
+        "terrainEffects": {
+          "water": 5
+        },
+        "tags": ["damage", "moveCasterToTarget", "water"]
+      }],
+      [{
+        "name": "Breaker 2",
+        "skillLevel": 2,
+        "range": "1-4",
+        "areaOfEffect": "lineToCross",
+        "effects": {
+          "damage": 50,
+          "moveCasterToTarget": true
+        },
+        "terrainEffects": {
+          "water": 10
+        },
+        "tags": ["damage", "moveCasterToTarget", "water"]
+      }],
+      [{
+        "name": "Breaker 3",
+        "skillLevel": 3,
+        "range": "1-4",
+        "areaOfEffect": "lineToSquare",
+        "effects": {
+          "damage": 50,
+          "moveCasterToTarget": true
+        },
+        "terrainEffects": {
+          "water": 10
+        },
+        "tags": ["damage", "moveCasterToTarget", "water"]
+      }]
+    ],
+    [
+      [{
+        "name": "Bedlam",
+        "skillLevel": 1,
+        "range": 1,
+        "areaOfEffect": "C",
+        "effects": {
+          "damage": 60
+        },
+        "terrainEffects": {
+          "breakDestructibles": true,
+          "chaoticallyModifyTerrain": true
+        },
+        "tags": ["damage", "breakDestructibles", "chaoticallyModifyTerrain"]
+      }],
+      [{
+        "name": "Nightmare",
+        "skillLevel": 2,
+        "range": 1,
+        "areaOfEffect": "snowflake C",
+        "effects": {
+          "damage": 70
+        },
+        "terrainEffects": {
+          "breakDestructibles": true,
+          "chaoticallyModifyTerrain": true
+        },
+        "tags": ["damage", "breakDestructibles", "chaoticallyModifyTerrain"]
+      }]
+    ],
+    [
+      [{
+        "name": "Sandblast",
+        "skillLevel": 1,
+        "range": 1,
+        "areaOfEffect": "pierce 1",
+        "effects": {
+          "damage": 60
+        },
+        "terrainEffects": {
+          "earthDown": 1,
+          "breakDestructibles": true
+        },
+        "tags": ["damage", "earthDown", "breakDestructibles"]
+      }],
+      [{
+        "name": "Sandblast 2",
+        "skillLevel": 2,
+        "range": 1,
+        "areaOfEffect": "pierce 1",
+        "effects": {
+          "damage": 75
+        },
+        "terrainEffects": {
+          "earthDown": 1,
+          "breakDestructibles": true
+        },
+        "tags": ["damage", "earthDown", "breakDestructibles"]
+      }]
+    ],
+    [
+      [{
+        "name": "Blood Curse",
+        "skillLevel": 1,
+        "range": 1,
+        "areaOfEffect": "single",
+        "terrainEffects": {
+          "water": 5
+        },
+        "statusEffects": {
+          "bloodCurse": 500
+        },
+        "tags": ["water", "bloodCurse"]
+      }]
+    ],
+    [
+      [{
+        "name": "Hyperreactive",
+        "skillLevel": 1,
+        "passive": true,
+        "areaOfEffect": "self",
+        "description": "Inverse reaction to unnerve and promote.",
+        "tags": ["passive"]
+      }]
+    ],
+    [
+      [{
+        "name": "Freezing Ray",
+        "skillLevel": 1,
+        "range": "1-4",
+        "areaOfEfect": "line",
+        "effects": {
+          "damage": 40
+        },
+        "terrainEffects": {
+          "water": 5,
+          "createIce": true
+        },
+        "statusEffects": {
+          "slow": 300
+        },
+        "tags": ["damage", "water", "createIce", "slow"]
+      }]
+    ],
+    [
+      [{
+        "name": "Affinity",
+        "skillLevel": 1,
+        "description": "Access an additional known ability from another breed, constrained by this breed's elemental affinities.",
+        "tags": ["affinity"]
+      }]
+    ]
+  ]
+}

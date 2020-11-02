@@ -230,7 +230,7 @@
         "passive": true,
         "areaOfEffect": "self",
         "description": "+5 damage per height advantage over target.",
-        "tags": ["bonusDamage"]
+        "tags": ["passive", "bonusDamage"]
       }]
     ]
   ]

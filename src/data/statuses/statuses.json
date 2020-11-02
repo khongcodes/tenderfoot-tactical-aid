@@ -21,7 +21,7 @@
         "number": 2
       }
     ],
-    "forms": ["archer"]
+    "forms": ["archer", "spellsword"]
   },
   "slow 2": {
     "type": "debuff",
@@ -37,12 +37,12 @@
     "type": "debuff",
     "effects": [
       {
-        "tag": "damage",
+        "tag": "damageOverTime",
         "number": 1,
         "perTicks": 5
       }
     ],
-    "forms": ["archer", "druid", "shaman"]
+    "forms": ["archer", "druid", "shaman", "bogWitch"]
   },
   "bewitched": {
     "type": "debuff",
@@ -56,6 +56,58 @@
       }
     ],
     "forms": ["shaman"]
+  },
+  "sickened": {
+    "type": "debuff",
+    "effects": [
+      {
+        "tag": "minusMaxHealth",
+        "number": 100
+      }
+    ],
+    "forms": ["bogWitch"]
+  },
+  "fecund": {
+    "type": "debuff",
+    "effects": [
+      {
+        "tag": "birthsBogBodyOnDeath"
+      }
+    ],
+    "forms": ["bogWitch"]
+  },
+  "sporeCloud": {
+    "type": "debuff",
+    "effects": [
+      {
+        "tag": "limitsActionRangeTo",
+        "range": 2
+      }
+    ],
+    "forms": ["bogWitch"]
+  },
+  "oil": {
+    "type": "debuff",
+    "effects": [
+      {
+        "tag": "doubleDamageByFire"
+      }
+    ],
+    "forms": ["lich"]
+  },
+  "boilingOil": {
+    "type": "debuff",
+    "effects": [
+      {
+        "tag": "doubleDamageByFire"
+      },
+      {
+        "tag": "damageOverTime",
+        "number": 1,
+        "perTicks": 6
+      }
+    ],
+    "forms": ["lich"]
   },
   "prideful": {
     "type": "buff",
@@ -129,5 +181,28 @@
       }
     ],
     "forms": ["shaman"]
+  },
+  "vampiric": {
+    "type": "buff",
+    "effects": [
+      {
+        "tag": "healSelfForDamageDone"
+      }
+    ],
+    "forms": ["bogWitch"]
+  },
+  "bloodCurse": {
+    "type": "buff",
+    "effects": [
+      {
+        "tag": "reflectDamage",
+        "number": 25
+      },
+      {
+        "tag": "plusPower",
+        "number": 20
+      }
+    ],
+    "forms": ["spellsword"]
   }
 }

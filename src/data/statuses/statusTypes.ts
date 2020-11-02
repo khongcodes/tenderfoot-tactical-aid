@@ -1,3 +1,8 @@
+///////////////////////////////////////////////////////////////////////////////////////////////
+////////////////                                                                          NOTES
+// Unanswered questions
+// Bog Witch's fecund - what is a bog body?
+
 import { FormNamesType } from "../forms/formTypes"
 
 const statusNames = <const> [
@@ -6,25 +11,37 @@ const statusNames = <const> [
   "slow 2",
   "poison",
   "bewitched",
+  "sickened",
+  "fecund",
+  "sporeCloud",
+  "oil",
+  "boilingOil",
   "prideful",
   "prideful 2",
   "inspired",
   "cocoon",
   "regen",
-  "thorn"
+  "thorn",
+  "vampiric",
+  "bloodCurse"
 ];
 
 const statusEffectNames = <const> [
-  "damage",
+  "damageOverTime",
   "plusMaxHealth",
+  "minusMaxHealth",
   "reduceIncomingUnnerve",
   "healOverTime",
+  "healSelfForDamageDone",
   "immuneToKnockback",
   "immuneToPull",
-  "createWater",
   "reflectDamage",
   "minusPower",
-  "fixationOnCaster"
+  "plusPower",
+  "fixationOnCaster",
+  "birthsBogBodyOnDeath",
+  "limitsActionRangeTo",
+  "doubleDamageByFire"
 ];
 
 export type StatusNamesType = typeof statusNames[number];

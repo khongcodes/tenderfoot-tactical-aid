@@ -64,13 +64,13 @@
         "areaOfEffect": "line",
         "effects": {
           "damage": 25,
-          "healSelf": true
+          "healSelfForDamageDone": true
         },
         "terrainEffects": {
           "water": 3
         },
         "description": "Heals caster for damage done.",
-        "tags": ["damage", "healSelf", "water"]
+        "tags": ["damage", "healSelfForDamageDone", "water"]
       }], 
       [{
         "name": "Thirst 2",
@@ -79,13 +79,13 @@
         "areaOfEffect": "cone 1",
         "effects": {
           "damage": 25,
-          "healSelf": true
+          "healSelfForDamageDone": true
         },
         "terrainEffects": {
           "water": 6
         },
         "description": "Heals caster for damage done.",
-        "tags": ["damage", "healSelf", "water"]
+        "tags": ["damage", "healSelfForDamageDone", "water"]
       }], 
       [{
         "name": "Thirst 3",
@@ -94,13 +94,13 @@
         "areaOfEffect": "C",
         "effects": {
           "damage": 25,
-          "healSelf": true
+          "healSelfForDamageDone": true
         },
         "terrainEffects": {
           "water": 9
         },
         "description": "Heals caster for damage done.",
-        "tags": ["damage", "healSelf", "water"]
+        "tags": ["damage", "healSelfForDamageDone", "water"]
       }]
     ],
     [
@@ -197,7 +197,7 @@
         "passive": true,
         "areaOfEffect": "self",
         "description": "Immunity to knockback and pull effects.",
-        "tags": ["immuneToKnockback", "immuneToPull"]
+        "tags": ["immuneToKnockback", "immuneToPull", "passive"]
       }]
     ],
     [

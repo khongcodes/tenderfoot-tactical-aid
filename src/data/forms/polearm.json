@@ -121,7 +121,7 @@
             "reduceIncomingDamage": 40
           },
           "description": "Adjacent allies take 40% less damage.",
-          "tags": ["reduceIncomingDamage"]
+          "tags": ["passive", "reduceIncomingDamage"]
         }]
       ]
     ]

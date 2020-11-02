@@ -65,14 +65,15 @@
         "effects": {
           "damage": 5,
           "unnerve": 1,
-          "moveCasterToTarget": true
+          "moveCasterToTarget": true,
+          "rangeVariableDamage": 5
         },
         "terrainEffects": {
           "fire": 0,
           "removeWater": 5
         },
         "description": "Hits all units facing target. Moves caster to target. +5 power per range.",
-        "tags": ["damage", "unnerve", "moveCasterToTarget", "fire", "removeWater"]
+        "tags": ["damage", "unnerve", "moveCasterToTarget", "fire", "removeWater", "allUnitsFacingTarget", "rangeVariableDamage"]
       }],
       [{
         "name": "Flash 2",
@@ -82,14 +83,15 @@
         "effects": {
           "damage": 5,
           "unnerve": 1,
-          "moveCasterToTarget": true
+          "moveCasterToTarget": true,
+          "rangeVariableDamage": 5
         },
         "terrainEffects": {
           "fire": 0,
           "removeWater": 5
         },
         "description": "Hits all units facing target. Moves caster to target. +5 power per range.",
-        "tags": ["damage", "unnerve", "moveCasterToTarget", "fire", "removeWater"]
+        "tags": ["damage", "unnerve", "moveCasterToTarget", "fire", "removeWater", "allUnitsFacingTarget", "rangeVariableDamage"]
       }]
     ],
     [
@@ -102,10 +104,11 @@
           "damage": 25
         },
         "terrainEffects": {
-          "removeWater": 1
+          "removeWater": 1,
+          "waterVariableDamage": 3
         },
         "description": "+3 power per water at target",
-        "tags": ["damage", "removeWater"]
+        "tags": ["damage", "removeWater", "waterVariableDamage"]
       }],
       [{
         "name": "Boil 2",
@@ -116,10 +119,12 @@
           "damage": 25
         },
         "terrainEffects": {
-          "removeWater": 1
+          "removeWater": 1,
+          "waterVariableDamage": 3,
+          "spreadsAcrossWater": true
         },
         "description": "Spreads across water. +3 power per water at target",
-        "tags": ["damage", "removeWater"]
+        "tags": ["damage", "removeWater", "waterVariableDamage", "spreadsAcrossWater"]
       }],
       [{
         "name": "Boil 3",
@@ -130,10 +135,12 @@
           "damage": 25
         },
         "terrainEffects": {
-          "removeWater": 1
+          "removeWater": 1,
+          "waterVariableDamage": 5,
+          "spreadsAcrossWater": true
         },
         "description": "Spreads across water. +5 power per water at target",
-        "tags": ["damage", "removeWater"]
+        "tags": ["damage", "removeWater", "waterVariableDamage", "spreadsAcrossWater"]
       }]
     ],
     [
@@ -193,10 +200,11 @@
           "damage": 25
         },
         "terrainEffects": {
-          "fire": 9
+          "fire": 9,
+          "grassVariableDamage": 5
         },
         "description": "+5 power per grass at target.",
-        "tags": ["damage", "fire"]
+        "tags": ["damage", "fire", "grassVariableDamage"]
       }],
       [{
         "name": "Incinerate 2",
@@ -207,24 +215,26 @@
           "damage": 25
         },
         "terrainEffects": {
-          "fire": 9
+          "fire": 9,
+          "grassVariableDamage": 5
         },
         "description": "+5 power per grass at target.",
-        "tags": ["damage", "fire"]
+        "tags": ["damage", "fire", "grassVariableDamage"]
       }],
       [{
         "name": "Incinerate 3",
         "skillLevel": 3,
         "range": 5,
-        "areaOfEffect": "lineToCross",
+        "areaOfEffect": "lineToSquare",
         "effects": {
           "damage": 25
         },
         "terrainEffects": {
-          "fire": 9
+          "fire": 9,
+          "grassVariableDamage": 5
         },
         "description": "+5 power per grass at target.",
-        "tags": ["damage", "fire"]
+        "tags": ["damage", "fire", "grassVariableDamage"]
       }]
     ],
     [

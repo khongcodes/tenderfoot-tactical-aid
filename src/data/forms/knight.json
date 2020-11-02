@@ -113,7 +113,7 @@
         "range": 0,
         "areaOfEffect": "single",
         "effects": {
-          "healSelf": 25
+          "heal": 25
         },
         "terrainEffects": {
           "growth": 2
@@ -121,7 +121,7 @@
         "statusEffects": {
           "prideful": 720
         },
-        "tags": ["healSelf", "growth", "prideful", "healOverTime"]
+        "tags": ["heal", "growth", "prideful", "healOverTime"]
       }], 
       [{
         "name": "Gloat",
@@ -129,7 +129,7 @@
         "range": 0,
         "areaOfEffect": "single",
         "effects": {
-          "healSelf": 25
+          "heal": 25
         },
         "terrainEffects": {
           "growth": 4
@@ -137,7 +137,7 @@
         "statusEffects": {
           "prideful 2": 720
         },
-        "tags": ["healSelf", "growth", "prideful 2", "healOverTime", "plusMaxHealth"]
+        "tags": ["heal", "growth", "prideful 2", "healOverTime", "plusMaxHealth"]
       }]
     ],
     [
@@ -147,10 +147,10 @@
         "passive": true,
         "areaOfEffect": "self",
         "effects": {
-          "unnerve": -1
+          "reduceIncomingUnnerve": -1
         },
         "description": "Reduce incoming unnerve by 1",
-        "tags": ["reduceIncomingUnnerve"]
+        "tags": ["passive", "reduceIncomingUnnerve"]
       }], 
       [{
         "name": "Headstrong 2",
@@ -158,10 +158,10 @@
         "passive": true,
         "areaOfEffect": "self",
         "effects": {
-          "unnerve": -2
+          "reduceIncomingUnnerve": -2
         },
         "description": "Reduce incoming unnerve by 2",
-        "tags": ["reduceIncomingUnnerve"]
+        "tags": ["passive", "reduceIncomingUnnerve"]
       }]
     ],
     [
@@ -174,7 +174,7 @@
         "terrainEffects": {
           "breakDestructibles": true
         },
-        "tags": ["breakDestructibles"]
+        "tags": ["passive", "breakDestructibles"]
       }]
     ]
   ]

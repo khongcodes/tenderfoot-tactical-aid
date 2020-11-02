@@ -177,7 +177,7 @@
         "passive": true,
         "areaOfEffect": "self",
         "description": "Move through brush unaffected.",
-        "tags": ["movement"]
+        "tags": ["passive", "movement"]
       }]
     ],
     [

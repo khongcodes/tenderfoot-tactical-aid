@@ -6,20 +6,27 @@
 // Is geyser destructible?
 // Is vortex difficult terrain?
 // Is vortex destructible?
+// what exactly does ice do?
 
 import { FormNamesType } from "../forms/formTypes";
 
 const terrainObjectNames = <const> [
   "brush",
+  "frailtyImbuedBrush",
+  "vigorImbuedBrush",
   "stalagmite",   // battlemage
   "geyser",       // elementalist
-  "vortex"        // vortex
+  "vortex",       // elementalist
+  "ice"           // spellsword
 ];
 
 const terrainObjectEffectNames = <const> [
   "damage",
   "createWater",
-  "removeWater"
+  "removeWater",
+  "minusPower",
+  "plusPower",
+  "freeMovementAcrossWater"
 ];
 
 type TerrainObjectNameType = typeof terrainObjectNames[number];
