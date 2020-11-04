@@ -9,25 +9,25 @@
     "woodsWitch",
     "wizard",
     "lich",
+    "salamander",
     "shaman",
+    "gorgon",
     "druid",
     "elementalist",
     "bogWitch"
   ],
-  "2": {},
-  "salamander": {
-    "formalName": "Salamander",
+  "worm": {
+    "formalName": "Worm",
     "availableFromStart": false,
     "requirements": {
-      "polearm": 3,
-      "battlemage": 5
+      "spellsword": 4,
+      "battlemage": 4
     },
-    "baseHP": 95,
-    "description": "Semi-aquatic. Thrives in marshes. Slimy and disease-ridden, but with a keen affinity for the healing arts.",
-    "unlockSite": "west",
+    "baseHP": 110,
+    "description": "Mud-dwellers. Sturdier than seems faire given their speed and damage. Poor vision and no foresight.",
+    "unlockSite": "southeast",
     "skills": []
   },
   "5": {},
-  "6": {},
   "8": {}
 }

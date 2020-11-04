@@ -17,11 +17,11 @@ const formNameKeys = <const> [
   "woodsWitch",
   "wizard",
   "lich",
-  "2",
+  "worm",
   "salamander",
   "shaman",
   "5",
-  "6",
+  "gorgon",
   "druid",
   "8",
   "elementalist",
@@ -77,14 +77,14 @@ type AllEffectNames = PrimaryEffectNamesType | TerrainEffectNamesType | StatusNa
 
 const areasOfEffectNames = <const> [
   "single",
-  "pierce 1",       // spellsword/sandblast
+  "pierce 1",       // spellsword/sandblast, salamander/retch
   "cross",
   "square",
   "diamond",        // archer/great salvo 2, wizard/whirlwind 2
-  "self",
+  "self",           // passives, generally
   "squareSurroundingSelf",
   "triangle",
-  "cone 1",
+  "cone 1",         
   "cone 2",         // battlemage/surge 3
   "C",              // battlemage/thirst 3
   "snowflake C",    // spellsword/nightmare
@@ -92,10 +92,11 @@ const areasOfEffectNames = <const> [
   "lineThrough",    // archer/lance
   "lineToCross",    // archer/frag lance
   "lineToSquare",   // elementalist/incinerate 3
-  "row",            // druid/hedge
+  "row",            // druid/hedge, gorgon/wave
   "variable",
   "allAlliesInRange",
   "allUnitsFacingTarget",
+  "allUnitsEyeContact",
   "entireBattlefield"
 ];
 
@@ -103,6 +104,7 @@ type AreasOfEffectNamesType = typeof areasOfEffectNames[number];
 
 
 const additionalTags = <const> [
+  "passive",
   "affinity",
   "movement",
   "reduceDamage",

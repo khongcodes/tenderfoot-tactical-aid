@@ -70,6 +70,6 @@
         "tag": "freeMovementAcrossWater"
       }
     ],
-    "forms": ["spellsword"]
+    "forms": ["spellsword", "gorgon"]
   }
 }

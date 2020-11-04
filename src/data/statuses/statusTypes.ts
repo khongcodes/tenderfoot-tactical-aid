@@ -6,7 +6,6 @@
 import { FormNamesType } from "../forms/formTypes"
 
 const statusNames = <const> [
-  "numb",
   "slow",
   "slow 2",
   "poison",
@@ -16,6 +15,8 @@ const statusNames = <const> [
   "sporeCloud",
   "oil",
   "boilingOil",
+  "blight",
+  "numb",
   "prideful",
   "prideful 2",
   "inspired",
@@ -28,6 +29,7 @@ const statusNames = <const> [
 
 const statusEffectNames = <const> [
   "damageOverTime",
+  "healsDoneOrReceivedBecomeDamage",
   "plusMaxHealth",
   "minusMaxHealth",
   "reduceIncomingUnnerve",

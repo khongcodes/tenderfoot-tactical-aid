@@ -1,18 +1,4 @@
 {
-  "numb": {
-    "type": "debuff",
-    "effects": [
-      {
-        "tag": "plusMaxHealth",
-        "number": 10
-      },
-      {
-        "tag": "reduceIncomingUnnerve",
-        "number": 2
-      }
-    ],
-    "forms": ["goblin"]
-  },
   "slow": {
     "type": "debuff",
     "effects": [
@@ -21,7 +7,7 @@
         "number": 2
       }
     ],
-    "forms": ["archer", "spellsword"]
+    "forms": ["archer", "spellsword", "gorgon"]
   },
   "slow 2": {
     "type": "debuff",
@@ -31,7 +17,7 @@
         "number": 3
       }
     ],
-    "forms": ["archer"]
+    "forms": ["archer", "gorgon"]
   },
   "poison": {
     "type": "debuff",
@@ -42,7 +28,7 @@
         "perTicks": 5
       }
     ],
-    "forms": ["archer", "druid", "shaman", "bogWitch"]
+    "forms": ["archer", "druid", "shaman", "bogWitch", "salamander"]
   },
   "bewitched": {
     "type": "debuff",
@@ -108,6 +94,29 @@
       }
     ],
     "forms": ["lich"]
+  },
+  "blight": {
+    "type": "debuff",
+    "effects": [
+      {
+        "tag": "healsDoneOrReceivedBecomeDamage"
+      }
+    ],
+    "forms": ["salamander"]
+  },
+  "numb": {
+    "type": "buff",
+    "effects": [
+      {
+        "tag": "plusMaxHealth",
+        "number": 10
+      },
+      {
+        "tag": "reduceIncomingUnnerve",
+        "number": 2
+      }
+    ],
+    "forms": ["goblin"]
   },
   "prideful": {
     "type": "buff",

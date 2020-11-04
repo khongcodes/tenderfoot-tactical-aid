@@ -1,0 +1,221 @@
+{
+  "formalName": "Gorgon",
+  "availableFromStart": false,
+  "requirements": {
+    "woodsWitch": 6,
+    "wizard": 4
+  },
+  "baseHP": 70,
+  "description": "A slippery and very dangerous ranged spellcaster with a deep affinity for mud and muck.",
+  "affinity": ["water", "earth"],
+  "unlockSite": "east",
+  "skills": [
+    [
+      [{
+        "name": "Glare",
+        "skillLevel": 1,
+        "range": 1,
+        "areaOfEffect": "allUnitsEyeContact",
+        "effects": {
+          "damage": 15,
+          "unnerve": 1
+        },
+        "description": "Hits all units in the caster's field of view which are also facing the caster.",
+        "tags": ["damage", "unnerve", "allUnitsEyeContact"]
+      }],
+      [{
+        "name": "Glare 2",
+        "skillLevel": 2,
+        "range": 1,
+        "areaOfEffect": "allUnitsEyeContact",
+        "effects": {
+          "damage": 15,
+          "unnerve": 2,
+          "knocback": 1
+        },
+        "description": "Hits all units in the caster's field of view which are also facing the caster.",
+        "tags": ["damage", "unnerve", "knockback", "allUnitsEyeContact"]
+      }],
+      [{
+        "name": "Glare 3",
+        "skillLevel": 3,
+        "range": 1,
+        "areaOfEffect": "allUnitsEyeContact",
+        "effects": {
+          "damage": 20,
+          "unnerve": 3,
+          "knocback": 1
+        },
+        "description": "Hits all units in the caster's field of view which are also facing the caster.",
+        "tags": ["damage", "unnerve", "knockback", "allUnitsEyeContact"]
+      }]
+    ],
+    [
+      [{
+        "name": "Hailstorm",
+        "skillLevel": 1,
+        "range": 6,
+        "areaOfEffect": "square",
+        "effects": {
+          "damage": 25
+        },
+        "terrainEffects": {
+          "water": 2,
+          "earthDown": 1,
+          "breakDestructibles": true
+        },
+        "tags": ["damage", "water", "earthDown", "breakDestructibles"]
+      }],
+      [{
+        "name": "Hailstorm 2",
+        "skillLevel": 2,
+        "range": 7,
+        "areaOfEffect": "square",
+        "effects": {
+          "damage": 30
+        },
+        "terrainEffects": {
+          "water": 2,
+          "earthDown": 2,
+          "breakDestructibles": true
+        },
+        "tags": ["damage", "water", "earthDown", "breakDestructibles"]
+      }],
+      [{
+        "name": "Hailstorm 3",
+        "skillLevel": 3,
+        "range": 0,
+        "areaOfEffect": "entireBattlefield",
+        "effects": {
+          "damage": 30
+        },
+        "terrainEffects": {
+          "water": 2,
+          "breakDestructibles": true
+        },
+        "tags": ["damage", "water", "breakDestructibles", "entireBattlefield"]
+      }]
+    ],
+    [
+      [{
+        "name": "Blizzard",
+        "skillLevel": 1,
+        "range": 4,
+        "areaOfEffect": "cross",
+        "effects": {
+          "damage": 30,
+          "unnerve": 1
+        },
+        "terrainEffects": {
+          "water": 2,
+          "createIce": true
+        },
+        "statusEffects": {
+          "slow": 300
+        },
+        "tags": ["damage", "unnerve", "water", "createIce", "slow"]
+      }],
+      [{
+        "name": "Blizzard 2",
+        "skillLevel": 2,
+        "range": 4,
+        "areaOfEffect": "square",
+        "effects": {
+          "damage": 30,
+          "unnerve": 1
+        },
+        "terrainEffects": {
+          "water": 2,
+          "createIce": true
+        },
+        "statusEffects": {
+          "slow": 300
+        },
+        "tags": ["damage", "unnerve", "water", "createIce", "slow"]
+      }],
+      [{
+        "name": "Blizzard 3",
+        "skillLevel": 3,
+        "range": 4,
+        "areaOfEffect": "cross",
+        "effects": {
+          "damage": 30,
+          "unnerve": 1
+        },
+        "terrainEffects": {
+          "water": 2,
+          "createIce": true
+        },
+        "statusEffects": {
+          "slow 2": 300
+        },
+        "tags": ["damage", "unnerve", "water", "createIce", "slow 2"]
+      }]
+    ],
+    [
+      [{
+        "name": "Crystallize",
+        "skillLevel": 1,
+        "range": 7,
+        "areaOfEffect": "lineToSquare",
+        "terrainEffects": {
+          "fire": 2,
+          "water": 2,
+          "breakDestructibles": true,
+          "createIce": true
+        },
+        "tags": ["fire", "water", "breakDestructibles", "createIce"]
+      }]
+    ],
+    [
+      [{
+        "name": "Wave",
+        "skillLevel": 1,
+        "range": 5,
+        "areaOfEffect": "row",
+        "effects": {
+          "damage": 30,
+          "knockback": 1
+        },
+        "terrainEffects": {
+          "water": 15,
+          "breakDestructibles": true
+        },
+        "tags": ["damage", "knockback", "water", "breakDestructibles"]
+      }],
+      [{
+        "name": "Wave 2",
+        "skillLevel": 2,
+        "range": 5,
+        "areaOfEffect": "row",
+        "effects": {
+          "damage": 40,
+          "knockback": 1
+        },
+        "terrainEffects": {
+          "water": 25,
+          "breakDestructibles": true
+        },
+        "tags": ["damage", "knockback", "water", "breakDestructibles"]
+      }]
+    ],
+    [
+      [{
+        "name": "Poise",
+        "skillLevel": 1,
+        "passive": true,
+        "areaOfEffect": "self",
+        "description": "Free movement across ice.",
+        "tags": ["passive", "movement"]
+      }]
+    ],
+    [
+      [{
+        "name": "Affinity",
+        "skillLevel": 1,
+        "description": "Access an additional known ability from another breed, constrained by this breed's elemental affinities.",
+        "tags": ["affinity"]
+      }]
+    ]
+  ]
+}

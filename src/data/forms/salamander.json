@@ -1,0 +1,185 @@
+{
+  "formalName": "Salamander",
+  "availableFromStart": false,
+  "requirements": {
+    "polearm": 3,
+    "battlemage": 5
+  },
+  "baseHP": 95,
+  "description": "Semi-aquatic. Thrives in marshes. Slimy and disease-ridden, but with a keen affinity for the healing arts.",
+  "affinity": ["water", "life"],
+  "unlockSite": "west",
+  "skills": [
+    [
+      [{
+        "name": "Sting",
+        "skillLevel": 1,
+        "range": "1-1",
+        "areaOfEffect": "single",
+        "effects": {
+          "damage": 35,
+          "doubleDamageFromBehind": true
+        },
+        "statusEffects": {
+          "poison": 200
+        },
+        "tags": ["damage", "doubleDamageFromBehind", "poison"]
+      }],
+      [{
+        "name": "Sting 2",
+        "skillLevel": 2,
+        "range": "1-1",
+        "areaOfEffect": "single",
+        "effects": {
+          "damage": 45,
+          "doubleDamageFromBehind": true
+        },
+        "statusEffects": {
+          "poison": 200
+        },
+        "tags": ["damage", "doubleDamageFromBehind", "poison"]
+      }],
+      [{
+        "name": "Sting 3",
+        "skillLevel": 3,
+        "range": "1-1",
+        "areaOfEffect": "single",
+        "effects": {
+          "damage": 55,
+          "doubleDamageFromBehind": true
+        },
+        "statusEffects": {
+          "poison": 200
+        },
+        "tags": ["damage", "doubleDamageFromBehind", "poison"]
+      }]
+    ],
+    [
+      [{
+        "name": "Rot",
+        "skillLevel": 1,
+        "range": 1,
+        "areaOfEffect": "cone 1",
+        "effects": {
+          "damage": 10
+        },
+        "terrainEffects": {
+          "removeLife": 10,
+          "water": 5
+        },
+        "statusEffects": {
+          "blight": 1200
+        },
+        "tags": ["damage", "removeLife", "water", "blight"]
+      }]
+    ],
+    [
+      [{
+        "name": "Retch",
+        "skillLevel": 1,
+        "range": "1-1",
+        "areaOfEffect": "pierce 1",
+        "effects": {
+          "damage": 15
+        },
+        "terrainEffects": {
+          "removeLife": 10,
+          "water": 10
+        },
+        "statusEffects": {
+          "poison": 200
+        },
+        "tags": ["damage", "removeLife", "water", "poison"]
+      }],
+      [{
+        "name": "Retch 2",
+        "skillLevel": 2,
+        "range": "1-1",
+        "areaOfEffect": "cone 1",
+        "effects": {
+          "damage": 15
+        },
+        "terrainEffects": {
+          "removeLife": 10,
+          "water": 15
+        },
+        "statusEffects": {
+          "poison": 300
+        },
+        "tags": ["damage", "removeLife", "water", "poison"]
+      }]
+    ],
+    [
+      [{
+        "name": "Cleanse",
+        "skillLevel": 1,
+        "range": 1,
+        "areaOfEffect": "single",
+        "effects": {
+          "heal": 40,
+          "removeAllStatusEffects": true
+        },
+        "terrainEffects": {
+          "water": 10
+        },
+        "tags": ["heal", "water", "removeAllStatusEffects"]
+      }],
+      [{
+        "name": "Cleanse 2",
+        "skillLevel": 2,
+        "range": 1,
+        "areaOfEffect": "single",
+        "effects": {
+          "heal": 50,
+          "removeAllStatusEffects": true
+        },
+        "terrainEffects": {
+          "water": 10
+        },
+        "tags": ["heal", "water", "removeAllStatusEffects"]
+      }],
+      [{
+        "name": "Cleanse 3",
+        "skillLevel": 3,
+        "range": 1,
+        "areaOfEffect": "single",
+        "effects": {
+          "heal": 60,
+          "removeAllStatusEffects": true
+        },
+        "terrainEffects": {
+          "water": 10
+        },
+        "tags": ["heal", "water", "removeAllStatusEffects"]
+      }]
+    ],
+    [
+      [{
+        "name": "Forestwalk 2",
+        "skillLevel": 1,
+        "passive": true,
+        "areaOfEffect": "self",
+        "description": "Free movement through brush.",
+        "tags": ["passive", "movement"]
+      }]
+    ],
+    [
+      [{
+        "name": "Waterwalk",
+        "skillLevel": 1,
+        "passive": true,
+        "areaOfEffect": "self",
+        "description": "Walk on water.",
+        "tags": ["passive", "movement"]
+      }]
+    ],
+    [
+      [{
+        "name": "Affinity",
+        "skillLevel": 1,
+        "description": "Access an additional known ability from another breed, constrained by this breed's elemental affinities.",
+        "tags": ["affinity"]
+      }]
+    ]
+  ]
+}
